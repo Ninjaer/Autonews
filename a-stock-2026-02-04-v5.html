@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A股热点日报 - 2026年2月4日</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f6f8; color: #333; line-height: 1.6; padding: 20px; }
+        .container { max-width: 900px; margin: 0 auto; background: #fff; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); overflow: hidden; }
+        .header { background: linear-gradient(135deg, #c62828 0%, #b71c1c 100%); color: #fff; padding: 28px 24px; text-align: center; }
+        .header h1 { font-size: 28px; margin-bottom: 8px; }
+        .header .date { font-size: 15px; opacity: 0.9; }
+        .warning { background: #fff3e0; border-left: 4px solid #ff9800; padding: 14px; margin: 16px 24px; border-radius: 0 8px 8px 0; font-size: 13px; }
+        .section { padding: 24px; border-bottom: 1px solid #eee; }
+        .section h2 { font-size: 20px; color: #1a1a2e; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; padding-bottom: 12px; border-bottom: 2px solid #c62828; }
+        .section h2 .icon { font-size: 24px; }
+        .news-item { background: #fafafa; border-radius: 8px; padding: 16px; margin-bottom: 14px; border-left: 4px solid #ddd; transition: all 0.2s; }
+        .news-item:hover { background: #fff5f5; border-left-color: #c62828; }
+        .news-item:last-child { margin-bottom: 0; }
+        .news-item h3 { font-size: 16px; color: #1a1a2e; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .news-item h3 .tag { font-size: 11px; padding: 3px 8px; border-radius: 4px; font-weight: 500; }
+        .news-item p { font-size: 14px; color: #555; line-height: 1.7; margin-bottom: 10px; }
+        .news-item .meta { font-size: 12px; color: #888; display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
+        .news-item .meta a { color: #1976d2; text-decoration: none; display: inline-flex; align-items: center; gap: 4px; }
+        .news-item .meta a:hover { text-decoration: underline; }
+        .badge-eastmoney { background: #ff6f00; color: #fff; }
+        .badge-xueqiu { background: #ff6f61; color: #fff; }
+        .badge-tonghuashun { background: #0073e6; color: #fff; }
+        .badge-sina { background: #e3f2fd; color: #1565c0; }
+        .badge-hot { background: #ffebee; color: #c62828; }
+        .outlook-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+        .outlook-card { background: linear-gradient(135deg, #fafafa 0%, #f5f5f5 100%); border-radius: 10px; padding: 18px; }
+        .outlook-card h4 { font-size: 15px; color: #1a1a2e; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #eee; }
+        .outlook-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #eee; font-size: 13px; }
+        .outlook-row:last-child { border-bottom: none; }
+        .outlook-row .label { color: #666; }
+        .outlook-row .value { font-weight: 600; }
+        .value.up { color: #c62828; }
+        .value.down { color: #2e7d32; }
+        .highlight-box { background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%); border-radius: 10px; padding: 18px; margin: 16px 0; border-left: 4px solid #c62828; }
+        .highlight-box.green { background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-left-color: #2e7d32; }
+        .highlight-box h4 { font-size: 15px; color: #1a1a2e; margin-bottom: 10px; }
+        .highlight-box p { font-size: 14px; color: #555; margin: 0; }
+        .footer { text-align: center; padding: 20px; background: #fafafa; color: #999; font-size: 12px; border-top: 1px solid #eee; }
+        .footer a { color: #1976d2; }
+        .section-num { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; background: #c62828; color: #fff; border-radius: 50%; font-size: 14px; font-weight: bold; margin-right: 8px; }
+        .source-logos { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+        .source-logo { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 500; }
+        .source-logo img { width: 16px; height: 16px; }
+        @media (max-width: 768px) { .outlook-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📈 A股热点日报</h1>
+            <div class="date">2026年2月4日 | 星期三</div>
+        </div>
+
+        <!-- 信源标识 -->
+        <div style="padding: 16px 24px 0; background: #fafafa;">
+            <div class="source-logos">
+                <span class="source-logo" style="background: #ff6f00; color: #fff;">📊 东方财富</span>
+                <span class="source-logo" style="background: #ff6f61; color: #fff;">🎯 雪球</span>
+                <span class="source-logo" style="background: #0073e6; color: #fff;">📈 同花顺</span>
+                <span class="source-logo" style="background: #e3f2fd; color: #1565c0;">📰 新浪财经</span>
+            </div>
+        </div>
+
+        <div class="warning">
+            ⚠️ <strong>数据时效性说明：</strong>本报告信息采集时间为2026年2月4日盘中/盘后，A股收盘数据待收盘后更新。如需最新数据，请于收盘后1-2小时再次查询。
+        </div>
+
+        <!-- 外围市场 -->
+        <div class="section">
+            <h2><span class="section-num">1</span>🌙 隔夜外围市场（2月4日）</h2>
+            <div class="outlook-grid">
+                <div class="outlook-card">
+                    <h4>🇺🇸 美股市场</h4>
+                    <div class="outlook-row">
+                        <span class="label">道琼斯工业平均指数</span>
+                        <span class="value down">-0.34%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">纳斯达克综合指数</span>
+                        <span class="value down">-1.41%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">标普500指数</span>
+                        <span class="value down">-0.84%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">纳指年内涨幅</span>
+                        <span class="value down">几乎回吐殆尽</span>
+                    </div>
+                </div>
+                <div class="outlook-card">
+                    <h4>💹 科技股领跌</h4>
+                    <div class="outlook-row">
+                        <span class="label">英伟达(NVDA)</span>
+                        <span class="value down">-2.84%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">微软(MSFT)</span>
+                        <span class="value down">-2.87%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">Meta(META)</span>
+                        <span class="value down">-2%+</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">博通(AVGO)</span>
+                        <span class="value down">-3.26%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="meta" style="margin-top: 16px;">
+                <span class="badge badge-sina">📰 新浪财经</span>
+                <span>📅 2026-02-04</span>
+                <span>🔗 <a href="https://finance.sina.com.cn/headline/2026-02-04/doc-inhkrayt6708546.shtml" target="_blank">原文链接</a></span>
+            </div>
+        </div>
+
+        <!-- 中概股表现 -->
+        <div class="section">
+            <h2><span class="section-num">2</span>🇨🇳 中概股表现（2月4日）</h2>
+            <div class="outlook-grid">
+                <div class="outlook-card">
+                    <h4>📈 涨幅榜</h4>
+                    <div class="outlook-row">
+                        <span class="label">小鹏汽车(XPEV)</span>
+                        <span class="value up">+4.06%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">理想汽车(LI)</span>
+                        <span class="value up">+2.90%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">中通快递(ZTO)</span>
+                        <span class="value up">+1.72%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">华住酒店(HTHT)</span>
+                        <span class="value up">+2.27%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">蔚来(NIO)</span>
+                        <span class="value up">+0.66%</span>
+                    </div>
+                </div>
+                <div class="outlook-card">
+                    <h4>📉 跌幅榜</h4>
+                    <div class="outlook-row">
+                        <span class="label">能链智电</span>
+                        <span class="value down">-7.54%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">哔哩哔哩(BILI)</span>
+                        <span class="value down">-4.21%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">阿里巴巴(BABA)</span>
+                        <span class="value down">-2.82%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">百度(BIDU)</span>
+                        <span class="value down">-2.50%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">携程(TCOM)</span>
+                        <span class="value down">-2.47%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-box green" style="margin-top: 16px;">
+                <h4>📊 指数表现</h4>
+                <p>纳斯达克中国金龙指数(HXC)收跌<span class="value down">-0.94%</span> | 台积电(TSM)跌<span class="value down">-1.60%</span> | 京东(JD)跌<span class="value down">-1.72%</span></p>
+            </div>
+            <div class="meta" style="margin-top: 12px;">
+                <span class="badge badge-sina">📰 新浪财经</span>
+                <span>📅 2026-02-04</span>
+                <span>🔗 <a href="https://finance.sina.com.cn/stock/usstock/c/2026-02-04/doc-inhkqwss3203824.shtml" target="_blank">原文链接</a></span>
+            </div>
+        </div>
+
+        <!-- 东方财富专栏 -->
+        <div class="section">
+            <h2><span class="section-num">3</span>📊 东方财富专栏（2月4日）</h2>
+            
+            <div class="news-item">
+                <h3><span class="tag badge-hot">🚀 马斯克</span> 马斯克拟来中国采购光伏，太空光伏概念股受益</h3>
+                <p>马斯克布局太空光伏，核心是为其航天、AI生态搭建无间断高效能源底座。计划利用太空无遮挡、超低温优势，实现24小时高效发电，为星链、轨道数据中心、xAI算力提供低成本稳定供电。</p>
+                <p><strong>核心受益股：</strong>迈为股份（HJT整线设备龙头，与SpaceX签订约5亿美元框架协议）、奥特维（HJT组件串焊机二供）、东方日升（量产50μm超薄P型HJT卫星电池）、隆基绿能（布局钙钛矿叠层技术）、赛伍技术（供应航天级PI膜）等8只股票。</p>
+                <div class="meta">
+                    <span class="badge badge-eastmoney">📊 东方财富</span>
+                    <span>📅 2026-02-04</span>
+                    <span>🔗 <a href="https://caifuhao.eastmoney.com/news/20260204165737659732750" target="_blank">原文链接</a></span>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3><span class="tag badge-eastmoney">⛏️ 煤炭股</span> 兖矿能源、中煤能源、中国神华等纷纷大涨</h3>
+                <p>2月4日煤炭股向上突破。很多人还没有认清煤炭的真正价值。煤炭早已面貌换新颜，污染问题已通过技术手段根本解决。我国超超临界技术领先其他国家好几个代际，煤电排放量已接近天然气水平。</p>
+                <p>我国"贫油少气富煤"的资源禀赋决定了以煤为主的能源结构在很长一段时间内不会改变。在双碳战略进程中，煤炭将起到兜底性保障作用。</p>
+                <div class="meta">
+                    <span class="badge badge-eastmoney">📊 东方财富</span>
+                    <span>📅 2026-02-04</span>
+                    <span>🔗 <a href="https://caifuhao.eastmoney.com/news/20260204155343241313410" target="_blank">原文链接</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 雪球观点 -->
+        <div class="section">
+            <h2><span class="section-num">4</span>🎯 雪球投资者观点（2月4日）</h2>
+            
+            <div class="news-item">
+                <h3><span class="tag badge-xueqiu">📈 市场分析</span> 经济增长预期与货币政策影响</h3>
+                <p>当GDP增速放缓、PMI等景气指标走弱时，市场对企业盈利前景的担忧升温，引发估值回调。2. 货币政策与利率调整：如央行收紧流动性、利率上行，会增加企业融资成本并降低股市相对吸引力，2025年部分阶段的利率调整就曾触发市场调整。</p>
+                <p>3. 通胀与政策转向：CPI/PPI数据超预期或政策从宽松转向中性，会导致资金风险偏好下降。</p>
+                <div class="meta">
+                    <span class="badge badge-xueqiu">🎯 雪球</span>
+                    <span>📅 2026-02-04</span>
+                    <span>🔗 <a href="https://k.sina.com.cn/article_7857201856_1d45362c00190213gi.html" target="_blank">原文链接</a></span>
+                </div>
+            </div>
+
+            <div class="news-item">
+                <h3><span class="tag badge-xueqiu">🏛️ 行业政策</span> 行业竞争格局与政策变量</h3>
+                <p>行业政策调整对板块估值影响显著。如监管层对特定行业（如互联网、地产）的规范政策出台，会直接影响板块估值体系重构。投资者需密切关注政策动向，把握结构性机会。</p>
+                <div class="meta">
+                    <span class="badge badge-xueqiu">🎯 雪球</span>
+                    <span>📅 2026-02-04</span>
+                    <span>🔗 <a href="https://k.sina.com.cn/article_7857201856_1d45362c00190213gi.html" target="_blank">原文链接</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 芯片行业 -->
+        <div class="section">
+            <h2><span class="section-num">5</span>💻 芯片行业动态（2月4日）</h2>
+            <div class="news-item">
+                <h3><span class="tag badge-hot">⚠️ AMD(AMD)</span> Q1业绩展望超预期但AI回报存疑</h3>
+                <p>AMD预计第一季度销售额约98亿美元（分析师预估均值93.9亿美元），但AI领域回报未达部分投资者预期，股价盘后跌逾5%。</p>
+                <div class="meta">
+                    <span class="badge badge-sina">📰 新浪财经</span>
+                    <span>📅 2026-02-04</span>
+                    <span>🔗 <a href="https://wap.cj.sina.cn/pc/7x24/4660142" target="_blank">原文链接</a></span>
+                </div>
+            </div>
+            <div class="news-item">
+                <h3><span class="tag badge-sina">🔄 并购</span> 德州仪器(TXN)拟70亿美元收购Silicon Labs</h3>
+                <p>德州仪器正就以约70亿美元收购芯片设计公司Silicon Laboratories进行深入谈判。消息发布后，Silicon Labs盘后大涨40%。</p>
+                <div class="meta">
+                    <span class="badge badge-sina">📰 新浪财经</span>
+                    <span>📅 2026-02-04</span>
+                    <span>🔗 <a href="https://wap.cj.sina.cn/pc/7x24/4660111" target="_blank">原文链接</a></span>
+                </div>
+            </div>
+            <div class="news-item">
+                <h3><span class="tag badge-sina">🤖 英伟达(NVDA)</span> 黄仁勋：将参与OpenAI下一轮融资</h3>
+                <p>英伟达CEO黄仁勋表示，公司对OpenAI的投资计划仍"按部就班推进"，将参与OpenAI下一轮融资，并希望参与OpenAI最终的IPO。</p>
+                <div class="meta">
+                    <span class="badge badge-sina">📰 新浪财经</span>
+                    <span>📅 2026-02-04</span>
+                    <span>🔗 <a href="https://wap.cj.sina.cn/pc/7x24/4660019" target="_blank">原文链接</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 全球供应链 -->
+        <div class="section">
+            <h2><span class="section-num">6</span>🌍 全球供应链动态（2月4日）</h2>
+            <div class="news-item">
+                <h3><span class="tag badge-sina">🤝 美国-印度</span> 关键矿物合作制度化</h3>
+                <p>美国国务院与印度外交部长讨论关键矿物勘探、开采和加工领域的双边合作制度化事宜，或对全球供应链及相关资源类板块产生影响。</p>
+                <div class="meta">
+                    <span class="badge badge-sina">📰 新浪财经</span>
+                    <span>📅 2026-02-04</span>
+                    <span>🔗 <a href="https://wap.cj.sina.cn/pc/7x24/4660168" target="_blank">原文链接</a></span>
+                </div>
+            </div>
+            <div class="news-item">
+                <h3><span class="tag badge-sina">🤝 欧盟-美国</span> 关键矿产伙伴关系</h3>
+                <p>欧盟拟与美国推进关键矿产伙伴关系，计划签署谅解备忘录以建立"战略伙伴关系路线图"，涉及联合项目开发、价格支持机制及供应链安全合作。</p>
+                <div class="meta">
+                    <span class="badge badge-sina">📰 新浪财经</span>
+                    <span>📅 2026-02-04</span>
+                    <span>🔗 <a href="https://wap.cj.sina.cn/pc/7x24/4659668" target="_blank">原文链接</a></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 大宗商品 -->
+        <div class="section">
+            <h2><span class="section-num">7</span>🛢️ 大宗商品与加密货币（2月4日）</h2>
+            <div class="outlook-grid">
+                <div class="outlook-card">
+                    <h4>📈 原油大涨</h4>
+                    <div class="outlook-row">
+                        <span class="label">WTI原油</span>
+                        <span class="value up">+2.99% 突破64美元/桶</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">布伦特原油</span>
+                        <span class="value up">+2.56% 突破68美元/桶</span>
+                    </div>
+                </div>
+                <div class="outlook-card">
+                    <h4>📉 加密货币暴跌</h4>
+                    <div class="outlook-row">
+                        <span class="label">比特币(BTC)</span>
+                        <span class="value down">-2.9% 报76,452美元</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">盘中最低</span>
+                        <span class="value down">73,000美元(特朗普胜选后最低)</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">爆仓人数</span>
+                        <span class="value down">16.8万人/24小时</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">爆仓金额</span>
+                        <span class="value down">7.34亿美元(约51亿人民币)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="meta" style="margin-top: 16px;">
+                <span class="badge badge-sina">📰 新浪财经</span>
+                <span>📅 2026-02-04</span>
+                <span>🔗 <a href="https://finance.sina.com.cn/headline/2026-02-04/doc-inhkrayt6708546.shtml" target="_blank">原文链接</a></span>
+            </div>
+        </div>
+
+        <!-- 昨日参考 -->
+        <div class="section">
+            <h2><span class="section-num">8</span>📊 昨日A股复盘参考（2月3日）</h2>
+            <div class="outlook-grid">
+                <div class="outlook-card">
+                    <h4>📈 大盘表现</h4>
+                    <div class="outlook-row">
+                        <span class="label">上证指数</span>
+                        <span class="value up">+1.29%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">深证成指</span>
+                        <span class="value up">+2.19%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">创业板指</span>
+                        <span class="value up">+1.86%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">北证50</span>
+                        <span class="value up">+3.27%</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">成交额</span>
+                        <span class="value">2.57万亿</span>
+                    </div>
+                </div>
+                <div class="outlook-card">
+                    <h4>🔥 热点板块</h4>
+                    <div class="outlook-row">
+                        <span class="label">领涨</span>
+                        <span class="value up">国防军工(+4.42%)</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">领涨</span>
+                        <span class="value up">机械设备(+3.98%)</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">领涨</span>
+                        <span class="value up">商业航天、太空光伏</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">领涨</span>
+                        <span class="value up">半导体设备、光模块</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">唯一下跌</span>
+                        <span class="value down">银行(-0.85%)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="highlight-box green" style="margin-top: 16px;">
+                <h4>💰 资金流向</h4>
+                <p>主力资金净流入16.49亿元，结束连续8个交易日净流出。国防军工(+45.87亿)、计算机(+18.78亿)、机械设备(+17.92亿)净流入居前。</p>
+            </div>
+            <div class="meta" style="margin-top: 12px;">
+                <span class="badge badge-sina">📰 中国证券报/新浪财经</span>
+                <span>📅 2026-02-03</span>
+                <span>🔗 <a href="https://finance.sina.com.cn/roll/2026-02-04/doc-inhkrayt6732781.shtml" target="_blank">原文链接</a></span>
+            </div>
+        </div>
+
+        <!-- 盘中/盘后展望 -->
+        <div class="section">
+            <h2><span class="section-num">9</span>⭐ 盘中/盘后展望</h2>
+            <div class="outlook-grid">
+                <div class="outlook-card">
+                    <h4>🔥 关注方向</h4>
+                    <div class="outlook-row">
+                        <span class="label">太空光伏</span>
+                        <span class="value">马斯克效应驱动</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">商业航天</span>
+                        <span class="value">政策+消息双重催化</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">煤炭</span>
+                        <span class="value">价值重估逻辑</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">科技成长</span>
+                        <span class="value">AI算力、半导体设备</span>
+                    </div>
+                </div>
+                <div class="outlook-card">
+                    <h4>⚠️ 风险提示</h4>
+                    <div class="outlook-row">
+                        <span class="label">外围风险</span>
+                        <span class="value down">美股科技股持续回调</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">加密货币</span>
+                        <span class="value down">波动风险传导</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">资金面</span>
+                        <span class="value down">春节前获利回吐压力</span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">仓位建议</span>
+                        <span class="value">5-7成灵活操作</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 信源汇总 -->
+        <div class="section">
+            <h2><span class="section-num">📋</span> 信源汇总</h2>
+            <div class="outlook-grid">
+                <div class="outlook-card">
+                    <h4>📊 东方财富</h4>
+                    <div class="outlook-row">
+                        <span class="label">财富号</span>
+                        <span class="value"><a href="https://caifuhao.eastmoney.com/" target="_blank">caifuhao.eastmoney.com</a></span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">专栏文章</span>
+                        <span class="value">马斯克光伏采购、煤炭价值重估</span>
+                    </div>
+                </div>
+                <div class="outlook-card">
+                    <h4>🎯 雪球</h4>
+                    <div class="outlook-row">
+                        <span class="label">热点小时报</span>
+                        <span class="value"><a href="https://xueqiu.com/" target="_blank">xueqiu.com</a></span>
+                    </div>
+                    <div class="outlook-row">
+                        <span class="label">投资者观点</span>
+                        <span class="value">经济增长、货币政策分析</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📊 数据来源：东方财富、雪球、新浪财经、中国证券报</p>
+            <p>🔗 所有原文链接已在每条新闻末尾标注</p>
+            <p>⚠️ 本报告信息采集时间：2026年2月4日盘中/盘后</p>
+            <p>🤖 由OpenClaw A股热点收集器生成 | 仅供参考，不构成投资建议</p>
+        </div>
+    </div>
+</body>
+</html>
