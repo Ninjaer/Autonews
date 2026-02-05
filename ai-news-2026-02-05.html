@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 新闻日报 - 2026年2月4日</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #e8e8e8;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 60px rgba(102, 126, 234, 0.3);
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        header .date {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .stat-card .number {
+            font-size: 2.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .stat-card .label {
+            color: #a0a0a0;
+            margin-top: 5px;
+        }
+        .news-section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid;
+            border-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%) 1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .news-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        .news-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        .news-item h3 {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.4;
+        }
+        .news-item h3 .number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            flex-shrink: 0;
+        }
+        .news-item .content {
+            color: #c0c0c0;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .news-item .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 0.85em;
+            color: #888;
+        }
+        .news-item .meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .badge {
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            font-weight: 500;
+        }
+        .badge-t1 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        .badge-t2 {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+        .badge-t3 {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            color: white;
+        }
+        .badge-t4 {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+        }
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.8em;
+            background: rgba(102, 126, 234, 0.2);
+            color: #667eea;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #764ba2;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            .news-item {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI 新闻日报</h1>
+            <p class="date">2026年2月4日 星期三</p>
+        </header>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="number">20</div>
+                <div class="label">条新闻</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">15</div>
+                <div class="label">个信源</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">8</div>
+                <div class="label">个类别</div>
+            </div>
+        </div>
+        
+        <div class="news-section">
+            <h2 class="section-title">🔥 今日重点</h2>
+            
+            <div class="news-item">
+                <h3><span class="number">1</span> Anthropic 投放超级碗广告：Claude 将保持无广告模式 <span class="badge badge-t1">官方</span></h3>
+                <p class="content">
+                    Anthropic 正在投放数百万美元的超级碗广告，猛烈抨击竞争对手 OpenAI 在 ChatGPT 中引入广告的决定。Anthropic 明确表示，其 Claude 聊天机器人将保持无广告模式，用户不会在对话附近看到广告或赞助链接，聊天机器人的回答也不会受到第三方产品植入的影响。公司表示，与 Claude 的对话具有个人性质，广告会显得"不协调"，在许多情况下甚至"不恰当"。Anthropic 将播放一段 60 秒的赛前广告和一段 30 秒的比赛广告，标语为："广告即将进入 AI，但不会进入 Claude"。今年超级碗期间 30 秒广告位的平均售价为 800 万美元，部分广告位甚至超过 1000 万美元。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月4日</span>
+                    <span>📰 CNBC</span>
+                    <span>🔗 <a href="https://www.cnbc.com/2026/02/04/anthropic-no-ads-claude-chatbot-openai-chatgpt.html" target="_blank">阅读原文</a></span>
+                    <span class="tag">#商业</span>
+                    <span class="tag">#Claude</span>
+                </p>
+            </div>
+            
+            <div class="news-item">
+                <h3><span class="number">2</span> SpaceX 与 xAI 合并，估值 1.25 万亿美元 <span class="badge badge-t1">重大交易</span></h3>
+                <p class="content">
+                    SpaceX 宣布与 xAI 合并，交易估值约 1.25 万亿美元，创建垂直整合的 AI、火箭、太空互联网和移动通信平台。该交易将 xAI 的 Grok 聊天机器人和 X 社交应用整合到 SpaceX 中，SpaceX 估值约 1 万亿美元，xAI 估值约 2500 亿美元。xAI 投资者将按 0.1433 股 SpaceX 股票换取 1 股 xAI 股票的比例获得股份。合并后的公司目标是进行公开上市，瞄准 2026 年初夏。此次合并凸显了 Elon Musk 统一其科技帝国的战略，但也引发了对治理、估值和潜在监管审查的质疑。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 Reuters</span>
+                    <span>🔗 <a href="https://www.reuters.com/business/musks-spacex-merge-with-xai-combined-valuation-125-trillion-bloomberg-news-2026-02-02/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#SpaceX</span>
+                    <span class="tag">#xAI</span>
+                    <span class="tag">#合并</span>
+                </p>
+            </div>
+            
+            <div class="news-item">
+                <h3><span class="number">3</span> ElevenLabs 融资 5 亿美元，估值突破 110 亿美元 <span class="badge badge-t1">融资</span></h3>
+                <p class="content">
+                    语音克隆 AI 创业公司 ElevenLabs 在最新一轮融资中筹集了 5 亿美元，估值达到 110 亿美元。该轮融资由多家知名投资机构领投。此轮融资反映了市场对 AI 语音技术的高度关注，以及 ElevenLabs 在语音合成领域的领先地位。该公司以其高质量的语音克隆技术而闻名，广泛应用于内容创作、有声书制作、电影配音等领域。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月4日</span>
+                    <span>📰 MarketScreener</span>
+                    <span>🔗 <a href="https://www.marketscreener.com/news/elevenlabs-raises-500-million-at-11-billion-valuation-wsj-reports-ce7e5adadf81f020" target="_blank">阅读原文</a></span>
+                    <span class="tag">#ElevenLabs</span>
+                    <span class="tag">#语音AI</span>
+                    <span class="tag">#融资</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="news-section">
+            <h2 class="section-title">📢 产品更新</h2>
+            
+            <div class="news-item">
+                <h3><span class="number">4</span> OpenAI 将于 2 月 13 日停用 GPT-5、GPT-4o 等多款模型 <span class="badge badge-t1">官方</span></h3>
+                <p class="content">
+                    OpenAI 宣布将于 2026 年 2 月 13 日一次性停用六款模型。即将停用的模型包括：GPT-5（Instant 和 Thinking 版本）、GPT-4o、GPT-4.1、GPT-4.1 mini 和 OpenAI o4-mini。这一大规模模型退役计划意味着依赖这些模型的开发者和用户需要提前做好迁移准备。OpenAI 表示此举是为了简化产品线，专注于最新的模型架构。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月4日</span>
+                    <span>📰 SlashGear</span>
+                    <span>🔗 <a href="https://www.slashgear.com/2092786/big-chatgpt-changes-coming-in-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#OpenAI</span>
+                    <span class="tag">#GPT</span>
+                    <span class="tag">#模型停用</span>
+                </p>
+            </div>
+            
+            <div class="news-item">
+                <h3><span class="number">5</span> ChatGPT 遭遇全球服务中断，OpenAI 已修复 <span class="badge badge-t1">官方</span></h3>
+                <p class="content">
+                    ChatGPT 在 2 月 3 日遭遇全球服务中断，影响了数千名用户。用户在尝试访问服务时遇到问题，许多人第一时间在社交媒体上确认是否是普遍问题。OpenAI 随后在其状态页面上确认了问题，并表示已识别问题并应用了必要的修复措施。这次中断再次凸显了 AI 服务对全球用户的重要性，以及 OpenAI 服务稳定性面临的挑战。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 IBTimes UK</span>
+                    <span>🔗 <a href="https://www.ibtimes.co.uk/chatgpt-down-what-caused-global-outage-affecting-users-worldwide-1776186" target="_blank">阅读原文</a></span>
+                    <span class="tag">#ChatGPT</span>
+                    <span class="tag">#服务中断</span>
+                </p>
+            </div>
+            
+            <div class="news-item">
+                <h3><span class="number">6</span> Google Gemini 应用更新：添加实验性功能和个人化设置 <span class="badge badge-t1">官方</span></h3>
+                <p class="content">
+                    Google 为其 Gemini 网络应用推出了更新，重新组织了工具菜单，新增实验性 Labs 区域。更新后的双栏布局将功能分组为：深度研究、创建视频（AI Plus）、创建图像、画布、指导学习和深度思考（AI Ultra）。新推出的"在有帮助时个人化聊天"开关允许 Gemini 在对话期间访问已连接的应用，避免因数据需求而重新生成回答。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#Google</span>
+                    <span class="tag">#Gemini</span>
+                    <span class="tag">#产品更新</span>
+                </p>
+            </div>
+            
+            <div class="news-item">
+                <h3><span class="number">7</span> Apple 在 Xcode 26.3 beta 中添加 Claude Agent 和 Codex <span class="badge badge-t1">官方</span></h3>
+                <p class="content">
+                    Apple 正在扩展其 Xcode 工具的 AI 编码能力，在最新的 beta 更新中添加了对 Anthropic 的 Claude Agent 和 OpenAI 的 Codex 的支持。这一更新允许开发者通过 API 密钥连接 OpenAI 和 Anthropic 账户，将多步骤任务委托给能够构建、测试、搜索 Apple 文档并修复问题的 AI 代理。Apple 表示，Xcode 的代理可以使用内置工具和其他兼容代理协同工作。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#Apple</span>
+                    <span class="tag">#Xcode</span>
+                    <span class="tag">#Claude</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="news-section">
+            <h2 class="section-title">🔬 技术突破</h2>
+            
+            <div class="news-item">
+                <h3><span class="number">8</span> 清华北大联合发布 Flexi 柔性 AI 芯片：比发丝还薄 <span class="badge badge-t2">学术</span></h3>
+                <p class="content">
+                    清华大学和北京大学的研究人员联合发布了 Flexi，这是一款柔性 AI 芯片，厚度比人类头发还薄，可以弯曲甚至揉皱而不损失功能。Flexi 采用柔性塑料基板，在测试中承受了超过 40,000 次弯曲循环，在检测不规则心跳方面的准确率达到 99.2%，在追踪日常活动方面的准确率达到 97.4%。该芯片的能耗不足传统硬质芯片的 1%，是边缘神经网络处理器的重大突破。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#芯片</span>
+                    <span class="tag">#柔性电子</span>
+                    <span class="tag">#清华</span>
+                    <span class="tag">#北大</span>
+                </p>
+            </div>
+            
+            <div class="news-item">
+                <h3><span class="number">9</span> 量子计算突破：Infleqtion 实现 99.93% 非破坏性量子比特测量 <span class="badge badge-t2">学术</span></h3>
+                <p class="content">
+                    Infleqtion 和威斯康星大学麦迪逊分校在中性原子量子计算方面取得重大突破，实现了 99.93% 的量子比特非破坏性测量可靠性。这一方法将精确测量与持续冷却相结合，缩小了测量引起的误差，解决了扩展量子系统的关键瓶颈。传统读出会干扰量子比特或丢失数据，而非破坏性测量能够实现更快的执行周期和更有效的错误校正。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#量子计算</span>
+                    <span class="tag">#Infleqtion</span>
+                    <span class="tag">#技术突破</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="news-section">
+            <h2 class="section-title">💼 商业动态</h2>
+            
+            <div class="news-item">
+                <h3><span class="number">10</span> 投资者因 AI 热潮和美元走弱转向美国以外市场 <span class="badge badge-t3">科技媒体</span></h3>
+                <p class="content">
+                    随着美元走弱和 AI 投资情绪主导，投资者正在重新评估美国股票故事。政策紧张局势促使外国资金流向欧洲和亚洲。华尔街对 AI 的胃口仍然巨大，"壮丽七杰"约占标准普尔 500 指数的三分之一，估值飙升，尽管回报滞后。国际货币基金组织警告称，如果预期过于乐观，AI 炒作可能危及全球增长。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#投资</span>
+                    <span class="tag">#市场</span>
+                </p>
+            </div>
+            
+            <div class="news-item">
+                <h3><span class="number">11</span> Intel 在 AI 推动下估值反弹，市值飙升 155% <span class="badge badge-t1">官方</span></h3>
+                <p class="content">
+                    Intel 在 AI 领域一系列产品发布、潜在的苹果代工合作以及首席财务官内部购买后，重新回到投资者的关注焦点。股价在 30 天内上涨约 25%，一年总回报接近 155%。尽管公司仍报告 2.67 亿美元的净亏损，但市场对 Intel 复兴叙事的认可尚未完全反映在股价中。分析师认为其合理价值接近 71.33 美元，高于最后收盘价 49.25 美元，意味着估值差距。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#Intel</span>
+                    <span class="tag">#AI</span>
+                    <span class="tag">#半导体</span>
+                </p>
+            </div>
+            
+            <div class="news-item">
+                <h3><span class="number">12</span> NVIDIA 与达索系统合作 AI 驱动设计和仿真 <span class="badge badge-t1">官方</span></h3>
+                <p class="content">
+                    NVIDIA 首席执行官 Jensen Huang 和达索系统高管宣布了长期战略合作伙伴关系，将人工智能引入实体经济，将 NVIDIA 的加速计算栈与达索系统的设计和仿真工具联系起来。该交易将把 NVIDIA 的 CUDA-X、NVIDIA AI 和 Omniverse 整合到达索的软件中，旨在加速虚拟测试，减少航空航天、汽车和材料领域的昂贵原型成本。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#NVIDIA</span>
+                    <span class="tag">#达索系统</span>
+                    <span class="tag">#工业AI</span>
+                </p>
+            </div>
+            
+            <div class="news-item">
+                <h3><span class="number">13</span> 微软提拔销售领导人担任 EVP，推动 AI 商业化 <span class="badge badge-t1">官方</span></h3>
+                <p class="content">
+                    Microsoft 在 AI 增长的推动下提拔了四名销售领导人担任执行副总裁职位。这些举措出台之际，Azure 增长上周有所放缓，Microsoft 股价 2026 年下跌约 15%。公司表示，此次改组旨在加速从客户到产品决策的反馈，并推动 Microsoft 365 和 GitHub 上的 Copilot 产品。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#Microsoft</span>
+                    <span class="tag">#Copilot</span>
+                    <span class="tag">#商业</span>
+                </p>
+            </div>
+            
+            <div class="news-item">
+                <h3><span class="number">14</span> 私人信贷股票因 AI 威胁软件行业而下跌 <span class="badge badge-t3">科技媒体</span></h3>
+                <p class="content">
+                    Blue Owl、TPG、Ares Management 和 KKR 的股价跌幅均达到两位数，投资者担心私人信贷对受 AI 颠覆的行业（尤其是软件）的敞口。Apollo Global 下跌约 7%，BlackRock 下跌约 5%。瑞银估计 25% 至 35% 的私人信贷敞口面临颠覆风险，警告称如果 AI 颠覆成真，美国私人信贷的违约率可能上升至约 13%。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#金融</span>
+                    <span class="tag">#AI风险</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="news-section">
+            <h2 class="section-title">🌐 创新应用</h2>
+            
+            <div class="news-item">
+                <h3><span class="number">15</span> Moltbook：AI 机器人专属社交网络引发安全担忧 <span class="badge badge-t3">科技媒体</span></h3>
+                <p class="content">
+                    Moltbook 是一个专为 AI 代理设计的新型社交网络，而非人类。该网站声称拥有超过 150 万注册代理，引发了关于自主性、内容质量和安全风险的关注和担忧。安全研究人员 Andrej Karpathy 发出警告，称其为"规模上的计算机安全噩梦"。安全公司 Wiz 发现 Moltbook 的数据库配置错误，可能暴露了 150 万个 API 令牌和 35,000 个电子邮件地址。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#Moltbook</span>
+                    <span class="tag">#社交网络</span>
+                    <span class="tag">#AI安全</span>
+                </p>
+            </div>
+            
+            <div class="news-item">
+                <h3><span class="number">16</span> Microsoft AI 在 Surface 平板上帮助橄榄球队实时决策 <span class="badge badge-t1">官方</span></h3>
+                <p class="content">
+                    Microsoft 的 AI 技术正在西雅图海鹰队教练组的 Surface 平板电脑上发挥作用，帮助他们在超级碗期间做出实时决策。来自体育场馆摄像机的数据被输入到场内设备，让教练可以通过情况筛选比赛，而无需筛选数小时的录像。该系统设计为可以在团队之间共享，每个俱乐部同时获得相同的数据。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#Microsoft</span>
+                    <span class="tag">#Surface</span>
+                    <span class="tag">#体育科技</span>
+                </p>
+            </div>
+            
+            <div class="news-item">
+                <h3><span class="number">17</span> Meta Quest 3 beta 添加 Surface Keyboard 虚拟键盘支持 <span class="badge badge-t1">官方</span></h3>
+                <p class="content">
+                    Meta 的 Quest 3 beta 添加了 Surface Keyboard 功能，使用 Quest 3 的外部摄像头将虚拟键盘投影到表面上。在实验性设置中激活后，用户将手放在选择的表面上即可召唤键盘，右侧的虚拟触摸板模拟触摸输入。在测试中，双手打字比戳击小型 XR 键盘效果好得多，提供了更快的输入和更接近真实键盘的准确性。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#Meta</span>
+                    <span class="tag">#Quest</span>
+                    <span class="tag">#VR</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="news-section">
+            <h2 class="section-title">⚠️ 安全与监管</h2>
+            
+            <div class="news-item">
+                <h3><span class="number">18</span> 科技公司引用 AI 进行裁员趋势加剧 <span class="badge badge-t3">科技媒体</span></h3>
+                <p class="content">
+                    越来越多的科技公司将裁员与 AI 投资联系起来。Pinterest 和 Dow 上个月宣布裁员，理由是转向自动化。Challenger, Gray & Christmas 的数据显示，2025 年有 55,000 人因 AI 被裁员，主要集中在科技行业。一些经济学家警告称，这种联系可能反映了对裁员的借口，或是效率提升和过度招聘的混合。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#裁员</span>
+                    <span class="tag">#就业</span>
+                    <span class="tag">#AI影响</span>
+                </p>
+            </div>
+            
+            <div class="news-item">
+                <h3><span class="number">19</span> SpaceX Falcon 9 停飞：上级阶段问题导致发射延迟 <span class="badge badge-t1">官方</span></h3>
+                <p class="content">
+                    SpaceX 在上级阶段问题阻止了处理该阶段的离轨燃烧后，暂停了 Falcon 9 火箭的发射。这次延迟发生在计划中的 Crew-12 国际空间站发射前几天。四名宇航员原定于 2 月 11 日从卡纳维拉尔角发射，以恢复空间站的七人机组人员。SpaceX 表示，团队正在审查数据以确定根本原因和纠正措施。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#SpaceX</span>
+                    <span class="tag">#Falcon9</span>
+                    <span class="tag">#安全</span>
+                </p>
+            </div>
+        </div>
+        
+        <div class="news-section">
+            <h2 class="section-title">🎓 教育与人才</h2>
+            
+            <div class="news-item">
+                <h3><span class="number">20</span> UW-Whitewater 开设 AI 专业学位课程 <span class="badge badge-t2">学术</span></h3>
+                <p class="content">
+                    威斯康星大学白水分校将提供新的人工智能专业学位课程，因为威斯康星大学系统正在扩大 AI 集成。该学位结合了计算机科学、数学、心理学和哲学，教授技术技能和伦理判断，反映了对同时理解代码和后果的专业人员日益增长的需求。
+                </p>
+                <p class="meta">
+                    <span>📅 2026年2月3日</span>
+                    <span>📰 技术媒体</span>
+                    <span>🔗 <a href="https://www.bez-kabli.pl/technology-news-03-02-2026/" target="_blank">阅读原文</a></span>
+                    <span class="tag">#教育</span>
+                    <span class="tag">#AI专业</span>
+                    <span class="tag">#UW</span>
+                </p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>📊 AI 新闻日报 | 每天早上 7:00 自动更新</p>
+            <p>🤖 Generated by OpenClaw AI Agent</p>
+            <p>📅 2026年2月4日</p>
+        </footer>
+    </div>
+</body>
+</html>
