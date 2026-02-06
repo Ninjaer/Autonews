@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 新闻日报 - 2026年2月6日</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #fff;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf, #ff006e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #888;
+            font-size: 1.1em;
+        }
+        .date {
+            color: #00d4ff;
+            font-size: 1.2em;
+            margin-top: 15px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            color: #00d4ff;
+            padding: 15px 0;
+            border-bottom: 2px solid #00d4ff;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-icon {
+            font-size: 1.2em;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        .news-card {
+            background: linear-gradient(145deg, #1e2a4a 0%, #0d1b2a 100%);
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0, 212, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            border-color: #00d4ff;
+            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.2);
+        }
+        .news-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+        }
+        .news-source {
+            display: inline-block;
+            background: linear-gradient(90deg, #7b2cbf, #ff006e);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            margin-bottom: 12px;
+        }
+        .news-title {
+            font-size: 1.15em;
+            color: #fff;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        .news-description {
+            color: #aaa;
+            font-size: 0.9em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        .news-time {
+            color: #666;
+            font-size: 0.8em;
+        }
+        .news-link {
+            color: #00d4ff;
+            text-decoration: none;
+            font-size: 0.85em;
+            padding: 6px 14px;
+            border: 1px solid #00d4ff;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+        .news-link:hover {
+            background: #00d4ff;
+            color: #0d1b2a;
+        }
+        .highlight {
+            background: linear-gradient(90deg, #ff006e, #7b2cbf);
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-size: 0.75em;
+            margin-left: 10px;
+        }
+        .tag {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.2);
+            color: #00d4ff;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-size: 0.75em;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: linear-gradient(145deg, #1e2a4a 0%, #0d1b2a 100%);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #00d4ff;
+        }
+        .stat-label {
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI 新闻日报</h1>
+            <p class="subtitle">每日AI行业动态、技术突破与中美关系深度分析</p>
+            <p class="date">📅 2026年2月6日 星期五</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">今日新闻</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">🔥</div>
+                <div class="stat-label">Claude Opus 4.6发布</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">⚡</div>
+                <div class="stat-label">H200对华销售受阻</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">🌏</div>
+                <div class="stat-label">DeepSeek V4将发布</div>
+            </div>
+        </div>
+
+        <!-- Claude Opus 4.6 Section -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🚀</span> Anthropic Claude Opus 4.6 重磅发布</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="news-source">CNBC</span>
+                    <h3 class="news-title">Anthropic launches Claude Opus 4.6 as AI moves toward a 'vibe working' era</h3>
+                    <p class="news-description">Anthropic周四宣布推出Claude Opus 4.6，这是其最新的人工智能模型。该公司在编码、维持长时间任务以及创造更高质量的专业工作产出方面都有显著提升，标志着AI进入"氛围工作"新时代。</p>
+                    <div class="news-meta">
+                        <span class="news-time">7小时前</span>
+                        <a href="https://www.cnbc.com/2026/02/05/anthropic-claude-opus-4-6-vibe-working.html" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="news-source">Axios</span>
+                    <h3 class="news-title">Anthropic's Claude Opus 4.6 uncovers 500 zero-day flaws in open-source code</h3>
+                    <p class="news-description">Anthropic于周四发布了其最大AI模型Claude Opus 4.6的最新版本。该模型在开源代码安全审计中表现出色，发现了500个零日漏洞，展示了其在网络安全领域的强大能力。</p>
+                    <div class="news-meta">
+                        <span class="news-time">7小时前</span>
+                        <a href="https://www.axios.com/2026/02/05/anthropic-claude-opus-46-software-hunting" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NVIDIA H200 Section -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🔴</span> NVIDIA H200 芯片对华销售受阻</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="news-source">Blockonomi</span>
+                    <h3 class="news-title">Nvidia (NVDA) Stock Drops as H200 Export Negotiations Remain Unresolved</h3>
+                    <p class="news-description">Nvidia股价下跌1.4%至177.74美元，H200芯片对华出口谈判在与特朗普政府之间陷入僵局，涉及KYC（了解你的客户）要求和其他许可条件问题。</p>
+                    <div class="news-meta">
+                        <span class="news-time">11小时前</span>
+                        <a href="https://blockonomi.com/nvidia-nvda-stock-drops-as-h200-export-negotiations-remain-unresolved/" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="news-source">Breitbart</span>
+                    <h3 class="news-title">Nvidia's AI Chip Sale to China's ByteDance Stalled</h3>
+                    <p class="news-description">特朗普政府已表示愿意允许中国科技巨头字节跳动购买Nvidia的先进H200人工智能芯片，但由于使用条件的分歧，交易仍然停滞。</p>
+                    <div class="news-meta">
+                        <span class="news-time">3小时前</span>
+                        <a href="https://www.breitbart.com/tech/2026/02/05/nvidias-ai-chip-sale-to-chinas-bytedance-stalled-by-attempt-to-keep-tech-away-from-chinese-military/" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google AI Section -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🔵</span> Google AI 逆袭超越 OpenAI</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="news-source">Reuters</span>
+                    <h3 class="news-title">Google goes from laggard to leader as it pulls ahead of OpenAI with stellar AI growth</h3>
+                    <p class="news-description">Alphabet正在以强劲的AI增长超越OpenAI，华尔街现在认为Google母公司是AI领域的领导者。这一转变与一年前投资者认为其严重落后于竞争对手的情况形成鲜明对比。</p>
+                    <div class="news-meta">
+                        <span class="news-time">10小时前</span>
+                        <a href="https://www.reuters.com/business/google-goes-laggard-leader-it-pulls-ahead-openai-with-stellar-ai-growth-2026-02-05/" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="news-source">Technology.org</span>
+                    <h3 class="news-title">Google Beats OpenAI in AI Race Wall Street Says</h3>
+                    <p class="news-description">当Alphabet宣布2026年资本支出可能达到1750-1850亿美元时，投资者最初的反应是退缩，股价在盘后交易中下跌6%。但这种本能反应很快消失，取而代之的是对Google AI未来的信心。</p>
+                    <div class="news-meta">
+                        <span class="news-time">18小时前</span>
+                        <a href="https://www.technology.org/2026/02/05/google-flips-script-from-ai-underdog-to-top/" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- OpenAI Section -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">💬</span> OpenAI 新动作：Frontier 企业平台</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="news-source">Business Insider</span>
+                    <h3 class="news-title">OpenAI exec is still 'bullish' about the future of software</h3>
+                    <p class="news-description">OpenAI周四发布了名为"Frontier"的新企业平台，旨在为客户提供更定制化的AI解决方案。OpenAI应用程序CEO Fidji Simo表示，该平台可以与软件公司轻松共存，而非取代它们。</p>
+                    <div class="news-meta">
+                        <span class="news-time">11小时前</span>
+                        <a href="https://www.businessinsider.com/openai-fidji-simo-software-frontier-enterprise-ai-2026-2" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="news-source">Axios</span>
+                    <h3 class="news-title">OpenAI, Anthropic and xAI approach IPO reckoning</h3>
+                    <p class="news-description">OpenAI、Anthropic和xAI都在接近IPO时刻。xAI正在采取最快、最非传统的发展路径，利用Musk的平台和政治资源加速Grok的发展和规模扩张。</p>
+                    <div class="news-meta">
+                        <span class="news-time">15小时前</span>
+                        <a href="https://www.axios.com/2026/02/05/openai-ipo-anthropic-xai-elon-musk" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- US-China AI Relations Section -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🌏</span> 中美 AI 关系动态</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="news-source">Reuters</span>
+                    <h3 class="news-title">US, China opt out of joint declaration on AI use in military</h3>
+                    <p class="news-description">约三分之一的国家在周四的军事AI峰会上同意了一份关于如何管理AI技术在战争中部署的宣言，但军事强国中美两国都选择退出。</p>
+                    <div class="news-meta">
+                        <span class="news-time">6小时前</span>
+                        <a href="https://www.reuters.com/business/aerospace-defense/us-china-opt-out-joint-declaration-ai-use-military-2026-02-05/" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="news-source">Bloomberg</span>
+                    <h3 class="news-title">Chinese AI Produces Different Responses Based on Users' Politics</h3>
+                    <p class="news-description">现代治国方略可能已经涉及操纵人工智能系统，根据用户的身份或政治活动产生不同的结果。这引发了关于AI系统在政治环境中被操纵的新担忧。</p>
+                    <div class="news-meta">
+                        <span class="news-time">14小时前</span>
+                        <a href="https://www.bloomberg.com/news/articles/2026-02-05/chinese-ai-produces-different-responses-based-on-users-politics" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="news-source">The Manila Times</span>
+                    <h3 class="news-title">Vision 2030: China's tech blueprint reshaping global innovation</h3>
+                    <p class="news-description">中国在2025年实现了技术创新的空前里程碑，从人工智能突破到深空探索。CGTN发布的报告显示，北京的技术动力正与更积极推动塑造AI、数据和数字基础设施等新兴领域的国际标准相结合。</p>
+                    <div class="news-meta">
+                        <span class="news-time">19小时前</span>
+                        <a href="https://www.manilatimes.net/2026/02/05/tmt-newswire/media-outreach-newswire/cgtn-vision-2030-chinas-tech-blueprint-reshaping-global-innovation/2272198" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="news-source">IntelliNews</span>
+                    <h3 class="news-title">China takes leading role in global tech with AI and space advances</h3>
+                    <p class="news-description">中国在AI和太空进步方面取得领先，成为全球科技领导者。根据CGTN周四发布的报告，北京正积极推动塑造AI、数据和数字基础设施等新兴领域的国际标准。</p>
+                    <div class="news-meta">
+                        <span class="news-time">15小时前</span>
+                        <a href="https://www.intellinews.com/china-takes-leading-role-in-global-tech-with-ai-and-space-advances-424333" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="news-source">People's Daily</span>
+                    <h3 class="news-title">AI reshapes China's workforce via new professions, constant learning</h3>
+                    <p class="news-description">人力资源和社会保障部部长王晓萍表示，中国将加快建立AI对就业影响的监测预警和响应系统，并遵循有利于就业的技术发展路径。</p>
+                    <div class="news-meta">
+                        <span class="news-time">1天前</span>
+                        <a href="http://en.people.cn/n3/2026/0205/c90000-20422680.html" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DeepSeek Section -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🇨🇳</span> DeepSeek V4 即将发布</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="news-source">FinancialContent</span>
+                    <h3 class="news-title">The DeepSeek Disruption: How R1's $6 Million Breakthrough Shattered the AI Brute-Force Myth</h3>
+                    <p class="news-description">到2026年2月，行业已认识到这次发布是一个"斯普特尼克时刻"，从根本上改变了人工智能的经济轨迹，并引发了定义当前技术格局的"效率革命"。</p>
+                    <div class="news-meta">
+                        <span class="news-time">5小时前</span>
+                        <a href="https://markets.financialcontent.com/stocks/article/tokenring-2026-2-5-the-deepseek-disruption-how-r1s-6-million-breakthrough-shattered-the-ai-brute-force-myth" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="news-source">Human AI Blog</span>
+                    <h3 class="news-title">DeepSeek V4 Release Date: Everything We Know So Far</h3>
+                    <p class="news-description">DeepSeek V4预计将于2026年2月中旬发布，具有革命性的编码能力。关注发布日期、Engram架构、基准测试以及为何这款中国AI模型让硅谷担忧。</p>
+                    <div class="news-meta">
+                        <span class="news-time">1天前</span>
+                        <a href="https://www.humai.blog/deepseek-v4-release-date-everything-we-know-so-far/" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="news-source">TamilTech</span>
+                    <h3 class="news-title">DeepSeek V4: 1M+ Context, Consumer GPU, Open Weights</h3>
+                    <p class="news-description">DeepSeek V4将于2026年2月中旬推出，具有100万+ token上下文、动态稀疏注意力、Engram内存以及RTX 4090/5090消费级GPU支持。</p>
+                    <div class="news-meta">
+                        <span class="news-time">1天前</span>
+                        <a href="https://tamiltech.in/public/article/deepseek-v4-launch-february-2026-context-consumer-gpu-open-weights" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="news-source">UC Strategies</span>
+                    <h3 class="news-title">AI War: 20 Minutes After Claude Opus 4.6, OpenAI Strikes Back With GPT-5.3 Codex</h3>
+                    <p class="news-description">2月将是激烈的一个月。xAI、DeepSeek和谷歌预计将有新动作，很少有人怀疑Anthropic和OpenAI还保留了额外更新。</p>
+                    <div class="news-meta">
+                        <span class="news-time">5小时前</span>
+                        <a href="https://ucstrategies.com/news/ai-war-20-minutes-after-claude-opus-4-6-openai-strikes-back-with-gpt-5-3-codex/" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Market Section -->
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">📊</span> AI 行业市场动态</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="news-source">CNBC</span>
+                    <h3 class="news-title">Is the AI bubble popping itself? Software's break from the tech stock boom raises concerns</h3>
+                    <p class="news-description">IGV在2023年飙升超过58%，2024年上涨23%，2025年涨幅略高于5%。认为抛售已经过度的投资者认为，智能体AI无法对行业中的现有企业造成有意义的伤害。</p>
+                    <div class="news-meta">
+                        <span class="news-time">7小时前</span>
+                        <a href="https://www.cnbc.com/2026/02/05/is-the-ai-bubble-popping-itself-software-rout-raises-concerns.html" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <span class="news-source">Bloomberg</span>
+                    <h3 class="news-title">Trillion-Dollar Tech Wipeout Ensnares All Stocks in AI's Path</h3>
+                    <p class="news-description">自ChatGPT进入主流以来的三年里，发生了许多AI驱动的抛售。但本周席卷股票和信贷市场的动荡是无与伦比的。</p>
+                    <div class="news-meta">
+                        <span class="news-time">1天前</span>
+                        <a href="https://www.bloomberg.com/news/articles/2026-02-04/trillion-dollar-tech-wipeout-ensnares-all-stocks-in-ai-s-path" class="news-link" target="_blank">阅读原文 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>📅 2026年2月6日 | 由 OpenClaw AI News 收集整理</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">免责声明：本日报内容来源于公开网络资源，仅供参考</p>
+        </footer>
+    </div>
+</body>
+</html>
