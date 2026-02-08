@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 每日新闻 - 2026年2月8日</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d0d1f 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(123, 44, 191, 0.1));
+            border-radius: 20px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        .header h1 {
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        .header p {
+            color: #888;
+            font-size: 1.1em;
+        }
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 212, 255, 0.2);
+            border-color: rgba(0, 212, 255, 0.3);
+        }
+        .news-title {
+            font-size: 1.3em;
+            color: #fff;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        .news-title .icon {
+            font-size: 1.2em;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .news-description {
+            color: #bbb;
+            font-size: 1em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .source {
+            color: #00d4ff;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        .date {
+            color: #888;
+            font-size: 0.9em;
+        }
+        .tag {
+            background: linear-gradient(135deg, #7b2cbf, #00d4ff);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 20px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            background: linear-gradient(90deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .stat-label {
+            color: #888;
+            font-size: 0.9em;
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .news-card {
+                padding: 20px;
+            }
+            .news-title {
+                font-size: 1.1em;
+            }
+            .stats {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI 每日新闻</h1>
+            <p>2026年2月8日 · 星期六 · 仅24小时内新闻</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value">18</div>
+                <div class="stat-label">条新闻</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">5h-20h</div>
+                <div class="stat-label">内更新</div>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://www.reuters.com/business/media-telecom/anthropic-buys-super-bowl-ads-slap-openai-selling-ads-chatgpt-2026-02-07/', '_blank')">
+            <div class="news-title">
+                <span class="icon">🎯</span>
+                <span>Anthropic 重金投放超级碗广告，公开抨击 OpenAI 广告计划</span>
+            </div>
+            <div class="news-description">
+                Anthropic 正在花费数百万美元在周日晚间的 NFL 冠军赛中播放广告，抨击竞争对手 OpenAI 在 ChatGPT 中植入广告的计划。这则30秒的广告描绘了一个场景：一个健身教练（暗示聊天机器人）首先推销鞋垫，最后以"广告即将进入AI，但不包括Claude"作为结尾。广告的最终台词是："广告即将进入AI。但不包括Claude。" 这也是 Anthropic 的 Claude 首次超级碗宣传活动。据估计，将有1.2亿观众观看比赛。OpenAI CEO Sam Altman 在社交媒体上回应称这些广告"明显具有欺骗性"。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 Reuters</span>
+                <span class="date">📅 13小时前</span>
+                <span class="tag">广告大战</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://www.sunshinecoastnews.com.au/2026/02/08/starlink-policy-update-sparks-user-concerns-over-ai/', '_blank')">
+            <div class="news-title">
+                <span class="icon">🔒</span>
+                <span>Starlink 更新隐私政策引发用户担忧：用户数据将用于 AI 训练</span>
+            </div>
+            <div class="news-description">
+                SpaceX 修改了 Starlink 隐私政策，允许使用客户数据来训练 AI 模型，这一变化可能有助于 Elon Musk 的 AI 雄心。Starlink 在1月15日更新了其全球隐私政策，除非用户选择退出，否则 Starlink 数据可能用于"训练我们的机器学习或人工智能模型"，并可能与第三方合作者共享。此前11月的隐私政策版本并不包含关于 AI 训练的内容。Georgetown 大学技术法律教授表示担忧。Starlink 目前为超过900万用户提供互联网连接。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 Sunshine Coast News</span>
+                <span class="date">📅 5小时前</span>
+                <span class="tag">隐私政策</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://english.elpais.com/technology/2026-02-07/google-amazon-openai-and-the-race-to-find-alternatives-to-nvidia.html', '_blank')">
+            <div class="news-title">
+                <span class="icon">💾</span>
+                <span>Google、Amazon、OpenAI 加速寻找 Nvidia 替代方案，自研芯片成趋势</span>
+            </div>
+            <div class="news-description">
+                数字时代建立在垄断之上。Nvidia 目前是 AI 芯片的最大供应商，其 GPU 已被证明是训练和运行 AI 模型的最佳选择。但其客户正在寻求替代方案。Amazon 推出了 Trainium3，Google 发布了第七代 TPU Ironwood，Microsoft 表示将把自家芯片用于大部分数据中心运营，OpenAI 与 Broadcom 达成协议生产自家处理器。据 Bloomberg Intelligence 预测，AI 加速器芯片市场将以年均16%的速度增长，到2033年达到6040亿美元。Nvidia 将占据70-75%的市场份额，AMD 占10%，ASIC 架构芯片占19%。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 EL PAÍS English</span>
+                <span class="date">📅 20小时前</span>
+                <span class="tag">芯片竞争</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://timesofindia.indiatimes.com/technology/tech-news/nvidia-ceo-jensen-huang-to-google-microsoft-meta-and-amazons-worried-investors-dont-be-alarmed-because-/articleshow/128046995.cms', '_blank')">
+            <div class="news-title">
+                <span class="icon">📈</span>
+                <span>Nvidia CEO 黄仁勋回应投资者担忧：AI 基础设施投资将持续7-8年</span>
+            </div>
+            <div class="news-description">
+                Nvidia CEO 黄仁勋向 Google、Microsoft、Meta 和 Amazon 担忧的投资者传达了"好消息"。他表示，AI 基础设施的建设将持续7-8年，因为对 AI 的需求"高得令人难以置信"。Google、Microsoft、Meta 和 Amazon 预计2026年将在 AI 工具上投入约6500亿美元，比前一年增长60%。这一数字正在推动 Nvidia 股价上涨。Nvidia 股价在2月7日收盘时上涨7.8%，这是自4月9日以来最好的一天，市值增加约3250亿美元。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 Times of India</span>
+                <span class="date">📅 10小时前</span>
+                <span class="tag">Nvidia</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://www.qatar-tribune.com/article/218267/business/anthropic-openai-rivalry-spills-into-new-super-bowl-ads-as-both-fight-to-win-over-ai-users', '_blank')">
+            <div class="news-title">
+                <span class="icon">⚔️</span>
+                <span>Anthropic 与 OpenAI  rivalry 升级：争夺 AI 用户市场主导权</span>
+            </div>
+            <div class="news-description">
+                两大 AI 创业公司 ChatGPT 和 Claude 的幕后团队正在准备一场事关生存的对决——今年双方都需要证明自己能够实现增长并争夺用户。在周日的超级碗比赛中，Anthropic 投放了价值数百万美元的广告，公开抨击 OpenAI 在 ChatGPT 中植入广告的计划。这是两大 AI 公司之间最公开的冲突之一。专家认为，这种争论将使人们同时想到 Claude 和 ChatGPT，最终双方都将受益。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 Qatar Tribune</span>
+                <span class="date">📅 8小时前</span>
+                <span class="tag">市场竞争</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://www.theguardian.com/technology/2026/feb/07/ai-chatbots-anthropic-openai-claude-chatgpt', '_blank')">
+            <div class="news-title">
+                <span class="icon">💬</span>
+                <span>Chatbot 广告大战升级：Anthropic 与 OpenAI 的公开对决</span>
+            </div>
+            <div class="news-description">
+                Anthropic 和 OpenAI 之间的广告大战不仅限于超级碗。四则广告都以相同的标语结尾："广告即将进入AI，但不包括Claude。"虽然没有明确提及 ChatGPT，但潜台词非常明显。Anthropic 在2月4日的博客中表示，Claude 将保持无广告状态，因为这将阻止聊天机器人成为"真正有用的工作助手和深度思考工具"。OpenAI CEO Sam Altman 在社交媒体上称这些广告"非常不诚实"。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 The Guardian</span>
+                <span class="date">📅 14小时前</span>
+                <span class="tag">AI 产品</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://timesofindia.indiatimes.com/technology/tech-news/apple-carplay-may-soon-support-chatgpt-gemini-and-other-ai-chatbots/articleshow/128022067.cms', '_blank')">
+            <div class="news-title">
+                <span class="icon">🚗</span>
+                <span>Apple CarPlay 重大更新：即将支持 ChatGPT、Claude、Gemini 等第三方 AI 助手</span>
+            </div>
+            <div class="news-description">
+                据彭博社报道，Apple 正在准备对 CarPlay 车辆界面进行重大更新，将允许驾驶员使用第三方 AI 语音助手。这一举措标志着 Apple 首次允许在 CarPlay 中使用外部语音控制，打破了 Siri 长期以来的独占地位。通过这一更新，驾驶员将能够直接通过 CarPlay 查询 AI 聊天机器人，例如在不双手离开方向盘的情况下向 ChatGPT 询问餐厅推荐。Siri 将保持默认助手的地位。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 Times of India</span>
+                <span class="date">📅 1天前</span>
+                <span class="tag">Apple</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://timesofindia.indiatimes.com/technology/tech-news/how-google-ceo-sundar-pichais-3-year-old-statement-in-email-to-employees-is-coming-to-true/articleshow/128027038.cms', '_blank')">
+            <div class="news-title">
+                <span class="icon">🏆</span>
+                <span>Google CEO 三年前的预言成真：Gemini 3 推动 Alphabet 年收入突破 4000 亿美元</span>
+            </div>
+            <div class="news-description">
+                Google 母公司 Alphabet 首席执行官 Sundar Pichai 三年前的邮件预言正在成真。Gemini 3 在11月的推出成为 Google 消费和企业应用的转折点。Google 报告称，Gemini 应用的月活跃用户（MAU）到年底达到 7500 万。Pichai 表示用户参与度显著提高。Google 的订阅业务也蓬勃发展，YouTube Premium 和 Google One 共有 3.25 亿付费订阅用户，与 Netflix 持平。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 Times of India</span>
+                <span class="date">📅 17小时前</span>
+                <span class="tag">Google</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://aijourn.com/ai-industry-matures-in-january-with-new-legislation-to-move-beyond-experimentation/', '_blank')">
+            <div class="news-title">
+                <span class="icon">📜</span>
+                <span>2026年1月：AI 行业走向成熟，新立法推动超越实验阶段</span>
+            </div>
+            <div class="news-description">
+                2026年的开始标志着公私部门对待 AI 技术方式的重大转变，行业正朝着更稳健、成熟的方向发展。欧洲继续推进 EU AI Act 的制定，新加坡发布了 AI 风险管理指南，韩国 AI 基本法执法条例开始了一年的宽限期。组织正在将 AI 模型作为核心基础设施进行整合，重点关注稳定性和长期效用，而非仅仅是"炫酷因素"。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 AI Journal</span>
+                <span class="date">📅 11小时前</span>
+                <span class="tag">政策法规</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://roboticsindia.live/india-ai-impact-summit-2026/', '_blank')">
+            <div class="news-title">
+                <span class="icon">🇮🇳</span>
+                <span>印度 AI 影响峰会 2026 将于2月19-20日在新德里举办</span>
+            </div>
+            <div class="news-description">
+                印度 AI 影响峰会 2026 将于2月19-20日在新德里的 Bharat Mandapam 举办，这标志着印度 AI 发展历程中的里程碑事件。本次峰会由政府主导，将发布重要 AI 政策和倡议。随着印度在全球 AI 版图中的地位日益重要，此次峰会预计将聚集政策制定者、行业领袖和创新者，共同探讨 AI 在印度的未来发展方向。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 The Robotics India</span>
+                <span class="date">📅 14小时前</span>
+                <span class="tag">印度峰会</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://www.tomshardware.com/video-games/handheld-gaming/intel-panther-lake-handheld-chips-reportedly-delayed-until-q2-2026-alleged-core-g3-series-might-launch-alongside-new-arc-b360-and-arc-b380-igpus', '_blank')">
+            <div class="news-title">
+                <span class="icon">💻</span>
+                <span>Intel Panther Lake 手持设备芯片推迟至2026年Q2发布</span>
+            </div>
+            <div class="news-description">
+                Intel 在 CES 2026 上展示的 Panther Lake 手持设备芯片（代号"Core G3"）将从原定的2026年Q1推迟到Q2发布。这款芯片将配备 Arc B360 或 B380 集成显卡，最多14个 CPU 核心，主要用于下一代游戏手持设备。Intel 此前称 AMD 的 Ryzen Z2 系列为"古老芯片"，AMD 则回应称 Intel 的方案过于泛化。目前 Intel 的 Lunar Lake 和 Meteor Lake 芯片在手持设备市场表现不错。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 Tom's Hardware</span>
+                <span class="date">📅 18小时前</span>
+                <span class="tag">Intel</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://mashable.com/article/top-tech-jobs-ai-2026', '_blank')">
+            <div class="news-title">
+                <span class="icon">💼</span>
+                <span>2026年最热门的5个 AI 相关职位：AI 工程师居首</span>
+            </div>
+            <div class="news-description">
+                随着科技行业全面投入 AI，AI 工程师成为美国增长最快的职位。AI 工程师负责构建 AI 代理、优化大型语言模型输出和神经网络训练，年薪约14.5万美元。其次是 AI 顾问和战略师，年薪可达20万美元以上。数据注释员排名第四，时薪可达100-180美元。AI/ML 研究人员排名第五，中位薪资约13万美元。数据中心技术人员需求也在快速增长，中位薪资约6.8万美元。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 Mashable</span>
+                <span class="date">📅 17小时前</span>
+                <span class="tag">就业市场</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://en.wikipedia.org/wiki/Claude_(language_model)', '_blank')">
+            <div class="news-title">
+                <span class="icon">🧠</span>
+                <span>Claude Opus 4.6 正式发布：Anthropic 最新旗舰模型</span>
+            </div>
+            <div class="news-description">
+                Claude 是 Anthropic 开发的一系列大型语言模型。第一个模型于2023年3月发布，最新的 Claude Opus 4.6 于2026年2月发布。Claude 模型是生成式预训练变压器，已被预训练用于预测大量文本中的下一个词。Claude Opus 4.6 是 Anthropic 的最新旗舰模型，具备100万 token 上下文窗口和自主 AI 代理能力，成为2026年的新性能标准。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 Wikipedia</span>
+                <span class="date">📅 19小时前</span>
+                <span class="tag">模型更新</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://www.geeky-gadgets.com/chatgpt-5-3-codex-vs-claude-opus-4-6-comparison/', '_blank')">
+            <div class="news-title">
+                <span class="icon">🔧</span>
+                <span>ChatGPT-5.3 Codex 与 Claude Opus 4.6 对比：AI 编程新纪元</span>
+            </div>
+            <div class="news-description">
+                OpenAI 发布的 ChatGPT-5.3 Codex 和 Anthropic 的 Claude Opus 4.6 正在重新定义 AI 的能力边界。ChatGPT-5.3 Codex 提供异步执行和自校正循环功能，适合长任务处理。Claude Opus 4.6 则增加了自适应思维、上下文压缩和代理团队功能，适合高度复杂的多步骤工作流。这两款创新模型为专业和技术领域带来了前所未有的效率和能力。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 Geeky Gadgets</span>
+                <span class="date">📅 15小时前</span>
+                <span class="tag">AI 编程</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://ppc.land/googles-discover-update-raises-discrimination-concerns-as-openai-tests-ads/', '_blank')">
+            <div class="news-title">
+                <span class="icon">⚠️</span>
+                <span>Google Discover 更新引发歧视担忧，OpenAI 测试广告引关注</span>
+            </div>
+            <div class="news-description">
+                Google Discover 的更新引发了关于歧视问题的担忧。与此同时，OpenAI 正在测试在 ChatGPT 中植入广告。Cloudflare 在2026年1月发布的研究显示，Googlebot 访问的唯一 URL 数量是 OpenAI 的3.2倍，是 Microsoft 的4.8倍。这些数据反映了 AI 行业在内容分发和广告模式方面面临的挑战和争议。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 PPC Land</span>
+                <span class="date">📅 14小时前</span>
+                <span class="tag">伦理问题</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://inspirepreneurmagazine.com/daily-rates/ai-spending-nears-700-billion-cash-flow-warnings-rise/', '_blank')">
+            <div class="news-title">
+                <span class="icon">💰</span>
+                <span>AI 支出逼近 7000 亿美元大关，现金流警告不断上升</span>
+            </div>
+            <div class="news-description">
+                AI 领域的资本支出正以前所未有的速度增长。Google、Microsoft、Meta 和 Amazon 四大科技巨头2026年在 AI 领域的支出预计将达到6500亿美元，比前一年增长60%。这一数字正在推动 AI 行业的高速发展，同时也引发了投资者对投资回报的担忧。Nvidia 股价因此受益，市值一天内增加约3250亿美元。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 InspirePreneur Magazine</span>
+                <span class="date">📅 1天前</span>
+                <span class="tag">资本支出</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://ppc.land/iab-ceo-reveals-how-30-years-transformed-260m-into-300b-industry/', '_blank')">
+            <div class="news-title">
+                <span class="icon">📊</span>
+                <span>IAB CEO 揭示：30年如何将2.6亿美元变成3000亿美元产业</span>
+            </div>
+            <div class="news-description">
+                IAB Tech Lab 在2026年1月宣布的综合代理 AI 路线图，试图在竞争协议分裂行业之前防止生态系统碎片化。该组织计划从2026年2月12日开始每月举办代理 AI 训练营和工作坊。这一路线图的发布反映了数字广告行业对 AI 技术的战略性重视，同时也显示了行业在规范 AI 应用方面的主动作为。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 PPC Land</span>
+                <span class="date">📅 13小时前</span>
+                <span class="tag">广告行业</span>
+            </div>
+        </div>
+
+        <div class="news-card" onclick="window.open('https://hackernoon.com/why-the-$70-million-aicom-domain-could-become-the-front-door-to-agi', '_blank')">
+            <div class="news-title">
+                <span class="icon">🌐</span>
+                <span>价值7000万美元的 ai.com 域名：AGI 的前门？</span>
+            </div>
+            <div class="news-description">
+                ai.com 推出面向消费者的自主 AI 代理，由 Crypto.com CEO Kris Marszalek 创立。该域名在2026年2月8日的超级碗 LX 上首次播放广告。这个价值7000万美元的域名可能成为通用人工智能（AGI）的入口，引发了关于 AI 未来发展的广泛讨论。
+            </div>
+            <div class="news-meta">
+                <span class="source">📰 HackerNoon</span>
+                <span class="date">📅 1天前</span>
+                <span class="tag">AGI</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🤖 AI 每日新闻 · 专注于为您提供最新的人工智能动态</p>
+            <p style="margin-top: 10px; color: #666;">数据来源：Reuters, Times of India, The Guardian, EL PAÍS 等</p>
+        </div>
+    </div>
+</body>
+</html>
