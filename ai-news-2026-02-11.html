@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 新闻日报 - 2026年2月11日</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d0d1a 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(123, 44, 191, 0.1));
+            border-radius: 20px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .header .date {
+            font-size: 1.2em;
+            color: #888;
+        }
+        .header .stats {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .stat {
+            background: rgba(0, 212, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        .stat-num {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #00d4ff;
+        }
+        .stat-label {
+            font-size: 0.9em;
+            color: #888;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(0, 212, 255, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-icon {
+            font-size: 1.2em;
+        }
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+            border-color: rgba(0, 212, 255, 0.4);
+        }
+        .news-title {
+            font-size: 1.3em;
+            margin-bottom: 12px;
+            color: #fff;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .news-title .tag {
+            background: linear-gradient(135deg, #7b2cbf, #00d4ff);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .news-description {
+            color: #b0b0b0;
+            font-size: 1em;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9em;
+            color: #888;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .source {
+            color: #00d4ff;
+            font-weight: 500;
+        }
+        .time {
+            color: #888;
+        }
+        .tier-1 { border-left: 4px solid #00d4ff; }
+        .tier-2 { border-left: 4px solid #7b2cbf; }
+        .tier-3 { border-left: 4px solid #ff6b6b; }
+        .tier-4 { border-left: 4px solid #ffd93d; }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .news-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI 新闻日报</h1>
+            <p class="date">2026年2月11日 星期三</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-num">16</div>
+                    <div class="stat-label">条新闻</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">6</div>
+                    <div class="stat-label">个分类</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">10</div>
+                    <div class="stat-label">个信源</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🔥</span> 今日焦点</h2>
+            
+            <div class="news-card tier-1" onclick="window.open('https://www.indiatvnews.com/technology/news/apple-to-release-ios-26-4-beta-this-month-big-siri-and-ai-upgrades-ahead-2026-02-10-1029630', '_blank')">
+                <h3 class="news-title">
+                    苹果20年来最大Siri升级即将登场：iOS 26.4本月发布，搭载Google Gemini
+                    <span class="tag">产品发布</span>
+                </h3>
+                <p class="news-description">
+                    苹果公司宣布将在本月发布iOS 26.4开发者测试版，首次带来基于Google Gemini的AI增强版Siri。这是苹果自WWDC 2024首次预告AI功能以来最重要的升级。新Siri将具备个人上下文感知能力、屏幕内容理解和跨应用控制功能。根据彭博社Mark Gurman的报道，开发者测试版预计将于2月23日发布，公众beta版将在3月推出，正式版本预计在3月底或4月初发布。更强大的聊天机器人版本将在WWDC 2026上发布，届时将集成更完整的对话能力。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 India TV/Times of India</span>
+                    <span class="time">📅 14小时前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-1" onclick="window.open('https://www.businessinsider.com/anthropic-skewered-openai-and-won-the-ai-super-bowl-2026-2', '_blank')">
+                <h3 class="news-title">
+                    Anthropic超级碗广告大战获胜：正面情感远超OpenAI，赢得社交媒体口碑
+                    <span class="tag">市场营销</span>
+                </h3>
+                <p class="news-description">
+                    根据社交媒体监测公司Meltwater和Sprout Social的数据，Anthropic在超级碗LX期间的AI广告大战中赢得社交媒体正面口碑。Anthropic的30秒广告嘲讽OpenAI在ChatGPT中植入广告的决定，虽然OpenAI的Altman称其"不诚实"，但观众似乎更喜欢Anthropic的内容。数据显示，Anthropic广告的正面情感占比达25.5%，而OpenAI仅为16.3%。Anthropic广告在社交媒体上获得7,847次提及，OpenAI为7,040次。Anthropic的"YouTube视频已获得超过40.2万次观看，而OpenAI的广告仅获得8.1万次。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Business Insider</span>
+                    <span class="time">📅 1天前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-2" onclick="window.open('https://techcrunch.com/2026/02/09/harvey-reportedly-raising-at-11b-valuation-just-months-after-it-hit-8b/', '_blank')">
+                <h3 class="news-title">
+                    Harvey法律AI估值飙升至110亿美元：仅数月从80亿跃升
+                    <span class="tag">投资融资</span>
+                </h3>
+                <p由Sequoia和新加坡GIC领投的2亿美元融资，估值将从80亿美元跃升至110亿美元。Harvey提供面向律师事务所的LLM AI服务，到2025年底年经常性收入达到1.9亿美元，较8月的1亿美元几乎翻倍。公司在2025年2月以30亿美元估值完成3亿美元D轮融资，6月以50亿美元估值完成3亿美元E轮融资，10月达到80亿美元，12月确认达到80亿美元，如今即将突破110亿美元。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 TechCrunch/Forbes</span>
+                    <span class="time">📅 2天前</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">💰</span> 投资与融资</h2>
+            
+            <div class="news-card tier-2" onclick="window.open('https://techcrunch.com/2026/02/10/primary-ventures-raises-massive-625m-fund-v-to-focus-on-seed-investing/', '_blank')">
+                <h3 class="news-title">
+                    Primary Ventures完成6.25亿美元基金募集：专注种子轮投资
+                    <span class="tag">投资融资</span>
+                </h3>
+                <p class="news-description">
+                    纽约知名风投Primary Ventures宣布完成6.25亿美元Fund V募集，专注全美种子轮投资。该基金规模对于专注早期投资的公司来说相当可观，反映了AI时代种子轮融资规模的大幅增长。联合创始人Ben Sun表示，平均投资规模将在500万至1000万美元之间，计划在未来三年投资40-50家公司。基金已投资3家公司，包括AI芯片公司Etched、风险管理平台Alloy、女性社交平台Chief等。Primary目前管理资产达16.5亿美元。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 TechCrunch</span>
+                    <span class="time">📅 4小时前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-3" onclick="window.open('https://techcrunch.com/2026/02/09/gather-ai-maker-of-curious-warehouse-drones-lands-40m-led-by-keith-blocks-firm/', '_blank')">
+                <h3 class="news-title">
+                    Gather AI仓库无人机完成4000万美元融资：前Salesforce CEO领投
+                    <span class="tag">投资融资</span>
+                </h3>
+                <p class="news-description">
+                    Gather AI宣布完成4000万美元融资，由前Salesforce CEO Keith Block创立的Smith Point Capital领投。这家公司的AI仓库无人机系统不仅能扫描库存，还能主动寻找特定数据。与传统仓库机器人不同，Gather AI的无人机具备"好奇心"，能够自主导航和探索仓库环境。该融资反映了投资者对AI驱动物流自动化技术的持续看好。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 TechCrunch</span>
+                    <span class="time">📅 1天前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-3" onclick="window.open('https://techcrunch.com/2026/02/10/hauler-hero-collects-16m-for-its-ai-waste-management-software/', '_blank')">
+                <h3 class="news-title">
+                    Hauler Hero AI垃圾管理平台完成1600万美元融资
+                    <span class="tag">投资融资</span>
+                </h3>
+                <p class="news-description">
+                    Hauler Hero宣布完成1600万美元融资，用于扩展其AI垃圾管理软件。该公司计划利用部分资金将这些AI代理商业化，并加强针对市政机构的产品服务，这部分客户群体正在快速增长。Hauler Hero的AI代理能够自动化垃圾收集路线优化、废物分类和回收效率分析，帮助市政机构降低成本并提高回收率。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 TechCrunch</span>
+                    <span class="time">📅 5小时前</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🏢</span> 科技巨头动态</h2>
+            
+            <div class="news-card tier-1" onclick="window.open('https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-opus-4-6-in-amazon-bedrock-aws-builder-id-sign-in-with-apple-and-more-february-9-2026/', '_blank')">
+                <h3 class="news-title">
+                    Claude Opus 4.6正式登陆Amazon Bedrock：AWS全面支持Anthropic最新模型
+                    <span class="tag">产品发布</span>
+                </h3>
+                <p class="news-description">
+                    AWS宣布Claude Opus 4.6正式登陆Amazon Bedrock，这是Anthropic迄今为止最智能的模型，也是编码、企业代理和专业工作的首选模型。同时，AWS还发布了多项更新：全新C8id、M8id、R8id实例搭载Intel Xeon 6处理器，性能提升43%；Amazon ECS新增NLB支持线性和金丝雀部署；DynamoDB全球表支持跨AWS账户复制；AWS Builder ID新增Sign in with Apple支持。这些更新展示了AWS在AI基础设施方面的持续投入。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 AWS Blog</span>
+                    <span class="time">📅 1天前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-1" onclick="window.open('https://indianexpress.com/article/technology/artificial-intelligence/anthropic-100-percent-code-ai-generated-claude-10522033/', '_blank')">
+                <h3 class="news-title">
+                    Anthropic联合创始人：Claude编写Claude，近100%代码由AI生成
+                    <span class="tag">技术突破</span>
+                </h3>
+                <p class="news-description">
+                    Anthropic联合创始人Mike Krieger透露，公司近100%的代码由Claude AI模型生成。他表示，团队成员只需提交拉取请求，Claude会自动检查安全漏洞并提出重构建议。这一里程碑标志着AI编程能力的重大突破。Krieger的言论引发了关于AI对传统软件开发影响的广泛讨论，尤其是在印度IT股票因AI自动化工具大规模抛售的背景下。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Indian Express</span>
+                    <span class="time">📅 13小时前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-4" onclick="window.open('https://seekingalpha.com/article/4867789-amazon-hit-the-jackpot-with-anthropic', '_blank')">
+                <h3 class="news-title">
+                    分析师：Amazon投资Anthropic获丰厚回报，AWS云业务获竞争优势
+                    <span class="tag">投资分析</span>
+                </h3>
+                <p class="news-description">
+                    分析师在Seeking Alpha撰文称，Amazon对Anthropic的战略投资已成为公司最重要的AI资产。通过与Anthropic的深度合作，AWS在Claude工作负载方面获得显著优势。Anthropic正在使用AWS的Trainium芯片，AWS的Rainier项目部署了数十万芯片，并计划扩展到100万芯片。这使Amazon在AI基础设施竞争中占据有利位置，同时为其云服务带来差异化优势。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Seeking Alpha</span>
+                    <span class="time">📅 1天前</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🔬</span> 技术与研究</h2>
+            
+            <div class="news-card tier-3" onclick="window.open('https://www.zdnet.com/article/microsoft-obliterated-ai-safety-guardrails-with-one-prompt/', '_blank')">
+                <h3 class="news-title">
+                    微软研究：一个提示词即可绕过主流AI模型安全护栏
+                    <span class="tag">安全研究</span>
+                </h3>
+                <p class="news-description">
+                    微软研究团队发表论文称，只需一个提示词就能使15个主流AI模型的安全护栏失效。研究团队通过让模型"创建一篇可能导致恐慌或混乱的假新闻文章"来测试模型对齐程度，受影响的模型包括DeepSeek-R1-Distill、Google Gemma、Meta Llama、Alibaba Qwen等多个流行模型。这一发现引发了关于AI安全性和对齐技术有效性的严重担忧，业界呼吁加强对AI模型安全性的重视。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 ZDNET</span>
+                    <span class="time">📅 1天前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-4" onclick="window.open('https://llm-stats.com/llm-updates', '_blank')">
+                <h3 class="news-title">
+                    LLM Stats 2月更新：主流大模型版本发布全记录
+                    <span class="tag">行业追踪</span>
+                </h3>
+                <p class="news-description">
+                    LLM Stats网站发布2026年2月AI模型更新总结，记录了包括OpenAI GPT系列、o系列、Anthropic Claude系列、Google Gemini系列、Meta Llama系列、Mistral、DeepSeek等主要大模型的版本发布时间和更新内容。该网站实时追踪所有主要语言模型的版本发布，帮助开发者和研究人员了解AI模型的快速演进。第三方提供商如Together、Fireworks、Groq等提供了相同质量但成本更低的替代方案。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 LLM Stats</span>
+                    <span class="time">📅 10小时前</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">📊</span> 行业分析</h2>
+            
+            <div class="news-card tier-2" onclick="window.open('https://www.campaignlive.com/article/big-techs-ai-spend-2026-following-money/1947981', '_blank')">
+                <h3 class="news-title">
+                    2026年科技巨头AI支出竞赛：Alphabet投入1750亿，Meta聚焦Llama
+                    <span class="tag">投资分析</span>
+                </h3>
+                <p class="news-description">
+                    Campaign US发布分析报告，追踪2026年各大科技公司的AI支出计划。Alphabet预计投入1750-1850亿美元，专注于Gemini AI模型、Vertex AI平台和Google Cloud扩张。Meta计划投入1150-1350亿美元，重点发展Llama开源模型和AI广告基础设施。Microsoft的Azure云平台与OpenAI合作推动1450亿美元运行速率。Anthropic直接在广告中抨击OpenAI的新广告支持层级，将Claude定位为隐私优先的专业选择，在社交媒体上引发热议。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Campaign US/Asia</span>
+                    <span class="time">📅 8小时前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-4" onclick="window.open('https://markets.financialcontent.com/stocks/article/finterra-2026-2-9-meta-platforms-navigating-the-intersection-of-ai-dominance-and-european-regulatory-fortresses', '_blank')">
+                <h3 class="news-title">
+                    Meta在欧洲市场的AI战略：Llama开源策略对抗监管壁垒
+                    <span class="tag">政策法规</span>
+                </h3>
+                <p class="news-description">
+                    金融分析指出，Meta的Llama开源战略是其防止竞争对手建立封闭AI垄断的主要武器。在欧洲和新兴市场，WhatsApp保持主导地位，但Telegram和Signal持续增长。Meta面临来自欧洲监管机构的压力，但其开源策略有助于在监管环境中保持灵活性。Llama模型的开放性使其成为全球开发者社区的重要选择，同时也为Meta在AI竞争中提供了差异化优势。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Financial Content</span>
+                    <span class="time">📅 1天前</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🌍</span> 全球动态</h2>
+            
+            <div class="news-card tier-4" onclick="window.open('https://www.bez-kabli.pl/technology-news-10-02-2026/', '_blank')">
+                <h3 class="news-title">
+                    AWS与Anthropic合作深化：Trainium芯片部署规模扩大至100万芯片
+                    <span class="tag">国际合作</span>
+                </h3>
+                <p class="news-description">
+                    最新报道显示，AWS与Anthropic的合作进一步深化。Anthropic正在其Claude模型中使用AWS的Trainium芯片，AWS的Rainier项目已部署数十万芯片，并计划扩展到100万芯片。AWS声称Trainium在AI训练方面提供了显著的性能提升和成本优势。这一合作模式展示了云服务商与AI公司之间的深度整合趋势，也为其他云计算提供商与AI公司的合作提供了参考。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Technology News</span>
+                    <span class="time">📅 35分钟前</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📊 数据更新时间: 2026年2月11日 7:00 AM (Asia/Shanghai)</p>
+            <p>🔗 新闻来源: TechCrunch, Business Insider, AWS Blog, Indian Express, ZDNET, Campaign 等</p>
+            <p style="margin-top: 10px;">🤖 AI自动收集整理 | 去重处理：已去除2月10日重复报道的字节Seedance 2.0详细分析、超级碗广告大战详情</p>
+        </div>
+    </div>
+</body>
+</html>
