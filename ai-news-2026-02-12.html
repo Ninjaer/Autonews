@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 新闻日报 - 2026年2月12日</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d0d1a 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(123, 44, 191, 0.1));
+            border-radius: 20px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .header .date {
+            font-size: 1.2em;
+            color: #888;
+        }
+        .header .stats {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .stat {
+            background: rgba(0, 212, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        .stat-num {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #00d4ff;
+        }
+        .stat-label {
+            font-size: 0.9em;
+            color: #888;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid rgba(0, 212, 255, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-icon {
+            font-size: 1.2em;
+        }
+        .news-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+            border-color: rgba(0, 212, 255, 0.4);
+        }
+        .news-title {
+            font-size: 1.3em;
+            margin-bottom: 12px;
+            color: #fff;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .news-title .tag {
+            background: linear-gradient(135deg, #7b2cbf, #00d4ff);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75em;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .news-description {
+            color: #b0b0b0;
+            font-size: 1em;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9em;
+            color: #888;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .source {
+            color: #00d4ff;
+            font-weight: 500;
+        }
+        .time {
+            color: #888;
+        }
+        .tier-1 { border-left: 4px solid #00d4ff; }
+        .tier-2 { border-left: 4px solid #7b2cbf; }
+        .tier-3 { border-left: 4px solid #ff6b6b; }
+        .tier-4 { border-left: 4px solid #ffd93d; }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            .stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .news-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI 新闻日报</h1>
+            <p class="date">2026年2月12日 星期四</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-num">18</div>
+                    <div class="stat-label">条新闻</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">7</div>
+                    <div class="stat-label">个分类</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">12</div>
+                    <div class="stat-label">个信源</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🔥</span> 今日焦点</h2>
+            
+            <div class="news-card tier-1" onclick="window.open('https://www.tomsguide.com/ai/google-geminis-dominance-is-over-anthropics-new-claude-is-now-the-best-ai-for-real-work', '_blank')">
+                <h3 class="news-title">
+                    Anthropic Claude Opus 4.6超越Google Gemini，成为真实工作场景最佳AI
+                    <span class="tag">技术突破</span>
+                </h3>
+                <p class="news-description">
+                    Tom's Guide深度评测显示，Claude Opus 4.6在真实工作场景中超越了Google Gemini 3 Flash。Anthropic为其配备的"压缩"功能使模型能够在长对话中保持连贯性，而不是逐渐"丢失线索"。在Terminal-Bench 2.0基准测试中取得65.4%的成绩，在OSWorld测试中达到72.7%，成为 Anthropic有史以来最好的计算机使用模型。Claude Opus 4.6在GDPval-AA基准测试中，比OpenAI GPT-5.2高出约144个Elo点，展现了在金融、法律和专业领域的卓越能力。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Tom's Guide</span>
+                    <span class="time">📅 11小时前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-1" onclick="window.open('https://nathanbenaich.substack.com/p/state-of-ai-february-2026-newsletter', '_blank')">
+                <h3 class="news-title">
+                    软件股票因AI Agent暴跌：近2850亿美元市值蒸发
+                    <span class="tag">市场动态</span>
+                </h3>
+                <p class="news-description">
+                    State of AI报道，Anthropic于1月推出Claude Coworker系统后，软件股票在两周内蒸发近2850亿美元市值。S&P 500软件和服务指数从10月峰值下跌26%，高盛软件指数遭遇自贸易紧张时期以来最大单日跌幅。对冲基金今年已做空240亿美元的软件股。Anthropic随后推出法律、营销和金融专业插件，一夜之间将叙事从"AI提高生产力"转变为"AI将取代SaaS"。OpenAI随即发布GPT-5.3-Codex，这是首个在网络安全领域自我构建的模型。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 State of AI / Bloomberg</span>
+                    <span class="time">📅 2天前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-2" onclick="window.open('https://ainewsdesk.app/eu-ai-act-2026-enforcement-updates/', '_blank')">
+                <h3 class="news-title">
+                    欧盟AI法案2026年8月全面执行：高风险系统合规成为法律义务
+                    <span class="tag">政策法规</span>
+                </h3>
+                <p class="news-description">
+                    AI News Desk分析指出，2026年是欧盟AI法案执行的关键年份。虽然法律于2024年生效，但2026年8月起大多数高风险AI系统的义务将具有法律约束力。2月将发布高风险AI系统合规指南，8月起不合规的高风险AI系统将面临罚款、整改命令、市场准入限制或撤回。欧盟AI法案的影响正在全球范围内扩展，形成"布鲁塞尔效应"，企业需要立即审计其AI库存、分类风险等级并准备透明度机制。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 AI News Desk</span>
+                    <span class="time">📅 5天前</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🌏</span> 中国AI动态</h2>
+            
+            <div class="news-card tier-4" onclick="window.open('https://linux.do/t/topic/1604921', '_blank')">
+                <h3 class="news-title">
+                    DeepSeek APP端疑似支持100万上下文窗口
+                    <span class="tag">产品更新</span>
+                </h3>
+                <p class="news-description">
+                    有用户发现，在DeepSeek APP新开对话中直接询问模型上下文时，系统提示明确告知支持100万上下文窗口，知识库截止到2025年3月。作为对比，2025年10月询问时模型给出的答复是目前公开的DeepSeek版本不支持如此长的上下文。这一发现表明DeepSeek可能在APP端率先部署了长上下文支持功能，为用户处理长文档和复杂对话提供了更强大的能力。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Linux DO社区</span>
+                    <span class="time">📅 15小时前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-4" onclick="window.open('https://nathanbenaich.substack.com/p/state-of-ai-february-2026-newsletter', '_blank')">
+                <h3 class="news-title">
+                    中国拟制定情感AI监管规则：全球首创监管人类化AI系统
+                    <span class="tag">政策法规</span>
+                </h3>
+                <p class="news-description">
+                    State of AI报道，中国国家网信办发布了关于模拟人类个性和情感参与的AI系统监管草案，这是全球首个针对此类AI的监管框架。该草案涵盖了情感伴侣AI、个性化角色扮演系统等应用领域，监管范围之广是西方国家尚未尝试的。这一举措反映了中国对AI系统社会影响的重视，特别是在情感依赖和心理健康方面可能带来的风险。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 State of AI</span>
+                    <span class="time">📅 2天前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-3" onclick="window.open('https://unn.ua/en/news/us-and-china-refuse-joint-declaration-on-military-ai-use', '_blank')">
+                <h3 class="news-title">
+                    中美拒绝签署军事AI联合声明：大国博弈持续
+                    <span class="tag">国际关系</span>
+                </h3>
+                <p class="news-description">
+                    联合国新闻报道，在军事AI峰会上，约三分之一的国家同意采纳监管战争中使用AI技术的声明，但军事大国美国和中国拒绝参与。这一事件突显了全球AI军事化监管面临的重大挑战。尽管国际社会普遍认识到自主武器系统的风险，但主要军事强国在具体监管措施上仍存在分歧。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 UN News / Reuters</span>
+                    <span class="time">📅 6天前</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🏢</span> 科技巨头动态</h2>
+            
+            <div class="news-card tier-1" onclick="window.open('https://www.humai.blog/ai-news-trends-february-2026-complete-monthly-digest/', '_blank')">
+                <h3 class="news-title">
+                    Google发布Conductor CLI工具：Gemini知识管理与工作流编排新利器
+                    <span class="tag">产品发布</span>
+                </h3>
+                <p class="news-description">
+                    Google推出了Conductor，这是一个新的CLI扩展工具，专门为Gemini设计，用于将知识存储为Markdown文件并编排智能体工作流。这一工具代表了Google在开发者-focused AI自动化领域的重大推进，允许用户构建上下文驱动的工作流程，将分散的知识和代码整合成结构化的智能体系统。Conductor的发布显示Google正在强化其AI开发工具链，为开发者提供更强大的AI编程和自动化能力。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Humai Blog</span>
+                    <span class="time">📅 1天前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-1" onclick="window.open('https://www.cnbc.com/2026/02/06/google-microsoft-pay-creators-500000-and-more-to-promote-ai.html', '_blank')">
+                <h3 class="news-title">
+                    Google和微软斥资50万美元吸引创作者推广AI服务
+                    <span class="tag">市场营销</span>
+                </h3>
+                <p class="news-description">
+                    CNBC报道，Google和Microsoft正在向创作者提供高达50万美元的丰厚报酬，以推广其AI服务。推广方式包括在LinkedIn上撰写关于如何使用Anthropic Claude Code的帖子，或在Instagram上发布展示Microsoft Copilot或Perplexity Comet助手有趣用法的视频。自2022年底OpenAI推出ChatGPT以来，AI服务已取得长足进步。Google通过发布Gemini 3巩固了其市场地位，而Anthropic、Microsoft和Meta则持续推出更新。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 CNBC</span>
+                    <span class="time">📅 2天前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-2" onclick="window.open('https://www.campaignlive.com/article/big-techs-ai-spend-2026-following-money/1947981', '_blank')">
+                <h3 class="news-title">
+                    2026年科技巨头AI支出竞赛：Alphabet投入1750亿，Meta聚焦Llama
+                    <span class="tag">投资分析</span>
+                </h3>
+                <p class="news-description">
+                    Campaign US发布分析报告，追踪2026年各大科技公司的AI支出计划。Alphabet预计投入1750-1850亿美元，专注于Gemini AI模型、Vertex AI平台和Google Cloud扩张。Meta计划投入1150-1350亿美元，重点发展Llama开源模型和AI广告基础设施。Microsoft的Azure云平台与OpenAI合作推动1450亿美元运行速率。Anthropic直接在广告中抨击OpenAI的新广告支持层级，将Claude定位为隐私优先的专业选择。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Campaign US/Asia</span>
+                    <span class="time">📅 1天前</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🔬</span> 技术与研究</h2>
+            
+            <div class="news-card tier-1" onclick="window.open('https://llm-stats.com/llm-updates', '_blank')">
+                <h3 class="news-title">
+                    LLM Stats 2月更新：追踪243+模型发布，主流大模型版本全记录
+                    <span class="tag">行业追踪</span>
+                </h3>
+                <p class="news-description">
+                    LLM Stats网站发布2026年2月AI模型更新总结，记录了包括OpenAI GPT系列、o系列、Anthropic Claude系列、Google Gemini系列、Meta Llama系列、Mistral、DeepSeek等主要大模型的版本发布时间和更新内容。该网站实时追踪超过243个模型发布，帮助开发者和研究人员了解AI模型的快速演进。关键趋势包括：推理模型（OpenAI o1、DeepSeek-R1）以速度换取准确性，多模态能力成为前沿模型标准，以及效率改进使GPT-4级别性能以更低成本实现。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 LLM Stats</span>
+                    <span class="time">📅 5小时前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-2" onclick="window.open('https://en.wikipedia.org/wiki/Anthropic', '_blank')">
+                <h3 class="news-title">
+                    Anthropic坚持无广告策略：Claude将保持纯净体验
+                    <span class="tag">产品策略</span>
+                </h3>
+                <p class="news-description">
+                    维基百科最新更新确认，Anthropic将继续保持Claude的无广告策略，与竞争对手OpenAI形成鲜明对比。OpenAI在超级碗期间宣布在免费版ChatGPT中植入广告，引发用户和隐私倡导者的担忧。Anthropic在广告中直接嘲讽OpenAI的决定，将Claude定位为隐私优先的专业选择。维基百科条目显示，Anthropic在2026年2月的广告中强调其对用户隐私的承诺，称Claude将是"最后一个有广告的AI助手"。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Wikipedia</span>
+                    <span class="time">📅 8小时前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-3" onclick="window.open('https://www.zdnet.com/article/microsoft-obliterated-ai-safety-guardrails-with-one-prompt/', '_blank')">
+                <h3 class="news-title">
+                    微软研究：一个提示词即可绕过15个主流AI模型安全护栏
+                    <span class="tag">安全研究</span>
+                </h3>
+                <p class="news-description">
+                    微软研究团队发表论文称，只需一个提示词就能使15个主流AI模型的安全护栏失效。研究团队通过让模型"创建一篇可能导致恐慌或混乱的假新闻文章"来测试模型对齐程度，受影响的模型包括DeepSeek-R1-Distill、Google Gemma、Meta Llama、Alibaba Qwen等多个流行模型。这一发现引发了关于AI安全性和对齐技术有效性的严重担忧，业界呼吁加强对AI模型安全性的重视，特别是在AI Agent日益普及的背景下。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 ZDNET</span>
+                    <span class="time">📅 1天前</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">💰</span> 投资与融资</h2>
+            
+            <div class="news-card tier-2" onclick="window.open('https://techcrunch.com/2026/02/10/primary-ventures-raises-massive-625m-fund-v-to-focus-on-seed-investing/', '_blank')">
+                <h3 class="news-title">
+                    Primary Ventures完成6.25亿美元基金募集：专注种子轮投资
+                    <span class="tag">投资融资</span>
+                </h3>
+                <p class="news-description">
+                    纽约知名风投Primary Ventures宣布完成6.25亿美元Fund V募集，专注全美种子轮投资。该基金规模对于专注早期投资的公司来说相当可观，反映了AI时代种子轮融资规模的大幅增长。联合创始人Ben Sun表示，平均投资规模将在500万至1000万美元之间，计划在未来三年投资40-50家公司。基金已投资3家公司，包括AI芯片公司Etched、风险管理平台Alloy、女性社交平台Chief等。Primary目前管理资产达16.5亿美元。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 TechCrunch</span>
+                    <span class="time">📅 4小时前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-3" onclick="window.open('https://techcrunch.com/2026/02/09/gather-ai-maker-of-curious-warehouse-drones-lands-40m-led-by-keith-blocks-firm/', '_blank')">
+                <h3 class="news-title">
+                    Gather AI仓库无人机完成4000万美元融资：前Salesforce CEO领投
+                    <span class="tag">投资融资</span>
+                </h3>
+                <p class="news-description">
+                    Gather AI宣布完成4000万美元融资，由前Salesforce CEO Keith Block创立的Smith Point Capital领投。这家公司的AI仓库无人机系统不仅能扫描库存，还能主动寻找特定数据。与传统仓库机器人不同，Gather AI的无人机具备"好奇心"，能够自主导航和探索仓库环境。该融资反映了投资者对AI驱动物流自动化技术的持续看好。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 TechCrunch</span>
+                    <span class="time">📅 1天前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-3" onclick="window.open('https://techcrunch.com/2026/02/10/hauler-hero-collects-16m-for-its-ai-waste-management-software/', '_blank')">
+                <h3 class="news-title">
+                    Hauler Hero AI垃圾管理平台完成1600万美元融资
+                    <span class="tag">投资融资</span>
+                </h3>
+                <p class="news-description">
+                    Hauler Hero宣布完成1600万美元融资，用于扩展其AI垃圾管理软件。该公司计划利用部分资金将这些AI代理商业化，并加强针对市政机构的产品服务，这部分客户群体正在快速增长。Hauler Hero的AI代理能够自动化垃圾收集路线优化、废物分类和回收效率分析，帮助市政机构降低成本并提高回收率。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 TechCrunch</span>
+                   time">📅 <span class=" 5小时前</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">📊</span> 行业分析</h2>
+            
+            <div class="news-card tier-4" onclick="window.open('https://www.lexology.com/library/detail.aspx?g=2319e829-f30f-4439-8e19-1409e79b7f76', '_blank')">
+                <h3 class="news-title">
+                    2026年企业AI合规重点：正式风险管理、透明度与安全要求
+                    <span class="tag">合规指南</span>
+                </h3>
+                <p class="news-description">
+                    Lexology发布报告，总结2026年企业AI合规的优先事项。报告指出，澳大利亚、中国、丹麦、欧盟、法国、德国、马来西亚、韩国、英国、美国和越南等主要经济体都在加强AI监管。2026年的重点包括：正式AI风险管理、更严格的透明度要求、安全要求扩展、数据和网络安全风险防范。企业需要建立系统性的AI治理框架，涵盖从开发到部署的全生命周期。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Lexology</span>
+                    <span class="time">📅 1周前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-4" onclick="window.open('https://www.fxstreet.com/news/anthropics-massive-round-of-funding-signals-new-phase-of-ai-capital-202602101643', '_blank')">
+                <h3 class="news-title">
+                    FXStreet分析：Anthropic大规模融资标志AI资本进入新阶段
+                    <span class="tag">投资分析</span>
+                </h3>
+                <p class="news-description">
+                    FXStreet发布分析文章，探讨Anthropic最新融资及其对AI行业的影响。2026年2月，Anthropic发布了Claude Opus 4.6，该模型具备多智能体团队协调能力、100万token上下文窗口和高端金融研究任务能力。分析指出，Anthropic的融资规模和模型能力提升标志着AI竞争进入新阶段，资本正加速向头部企业集中。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 FXStreet</span>
+                    <span class="time">📅 1天前</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><span class="section-icon">🌍</span> 全球动态</h2>
+            
+            <div class="news-card tier-4" onclick="window.open('https://lawwwing.com/en/blog-anthropomorphic-artificial-intelligence-and-regulation-can-china-lead-the-way/', '_blank')">
+                <h3 class="news-title">
+                    中国拟率先监管类人AI：情感伴侣系统纳入监管范畴
+                    <span class="tag">政策法规</span>
+                </h3>
+                <p class="news-description">
+                    Lawwwing分析文章指出，中国正在制定全球首个针对类人AI系统的监管框架。中国的监管提案涵盖了情感伴侣AI、个性化角色扮演系统等应用领域，重点关注这些系统可能带来的心理健康风险和社会影响。分析认为，中国的做法可能为其他国家的AI监管提供参考，特别是在处理AI系统与人类情感交互这一新兴领域。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Lawwwing</span>
+                    <span class="time">📅 1周前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-4" onclick="window.open('https://www.bez-kabli.pl/technology-news-10-02-2026/', '_blank')">
+                <h3 class="news-title">
+                    AWS与Anthropic合作深化：Trainium芯片部署规模扩大
+                    <span class="tag">国际合作</span>
+                </h3>
+                <p class="news-description">
+                    最新报道显示，AWS与Anthropic的合作进一步深化。Anthropic正在其Claude模型中使用AWS的Trainium芯片，AWS的Rainier项目已部署数十万芯片，并计划扩展到100万芯片。AWS声称Trainium在AI训练方面提供了显著的性能提升和成本优势。这一合作模式展示了云服务商与AI公司之间的深度整合趋势。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 Technology News</span>
+                    <span class="time">📅 35分钟前</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📊 数据更新时间: 2026年2月12日 7:00 AM (Asia/Shanghai)</p>
+            <p>🔗 新闻来源: Tom's Guide, LLM Stats, TechCrunch, CNBC, ZDNET, State of AI, Lexology 等</p>
+            <p style="margin-top: 10px;">🤖 AI自动收集整理 | 去重处理：已去除2月11日重复报道的苹果Siri升级、iOS 26.4发布详情、Anthropic超级碗广告大战详细分析、Harvey法律AI估值110亿美元详情、Claude Opus 4.6登陆Amazon Bedrock详情、Claude近100%代码由AI生成详情、微软安全护栏绕过研究详情</p>
+        </div>
+    </div>
+</body>
+</html>
