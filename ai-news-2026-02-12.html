@@ -165,7 +165,7 @@
             <p class="date">2026年2月12日 星期四</p>
             <div class="stats">
                 <div class="stat">
-                    <div class="stat-num">18</div>
+                    <div class="stat-num">20</div>
                     <div class="stat-label">条新闻</div>
                 </div>
                 <div class="stat">
@@ -173,7 +173,7 @@
                     <div class="stat-label">个分类</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-num">12</div>
+                    <div class="stat-num">14</div>
                     <div class="stat-label">个信源</div>
                 </div>
             </div>
@@ -228,13 +228,49 @@
         <div class="section">
             <h2 class="section-title"><span class="section-icon">🌏</span> 中国AI动态</h2>
             
+            <div class="news-card tier-1" onclick="window.open('https://36kr.com/p/3677387286438530', '_blank')">
+                <h3 class="news-title">
+                    智谱GLM-5架构曝光：采用DeepSeek稀疏注意力，参数量翻倍至745B
+                    <span class="tag">独家</span>
+                </h3>
+                <p class="news-description">
+                    <strong>36氪 · 量子位</strong><br><br>
+                    智谱AI发布GLM-5，核心发现：<br>
+                    • <strong>复用DeepSeek技术</strong>：采用DSA稀疏注意力和MTP多Token预测<br>
+                    • <strong>参数量翻倍</strong>：从GLM-4.7的355B提升到745B<br>
+                    • <strong>MoE架构</strong>：256个专家，每次激活8个（约44B参数）<br>
+                    • <strong>上下文窗口</strong>：最高支持202K token<br><br>
+                    OpenRouter匿名模型「Pony Alpha」被91%开发者判定为GLM-5测试版。受此影响，智谱AI港股两日暴涨60%。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 36氪</span>
+                    <span class="time">📅 15小时前</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-1" onclick="window.open('https://www.scmp.com/tech/article/3343239/chinas-zhipu-ai-launches-new-major-model-glm-5-challenge-its-rivals', '_blank')">
+                <h3 class="news-title">
+                    智谱发布GLM-5挑战DeepSeek，总参数量达7440亿
+                    <span class="tag">南华早报</span>
+                </h3>
+                <p class="news-description">
+                    <strong>South China Morning Post</strong><br><br>
+                    中国AI开发商智谱发布GLM-5，将参数量从上一代GLM-4.7的3550亿翻倍至7440亿，训练数据扩展到28.5万亿token。<br><br>
+                    GLM-5采用由DeepSeek首创的稀疏注意力机制（DSA），专为复杂编码和智能体任务设计。这是继DeepSeek震撼业界后，中国AI公司加速追赶的最新例证。
+                </p>
+                <div class="news-meta">
+                    <span class="source">📰 南华早报</span>
+                    <span class="time">📅 49分钟前</span>
+                </div>
+            </div>
+
             <div class="news-card tier-4" onclick="window.open('https://linux.do/t/topic/1604921', '_blank')">
                 <h3 class="news-title">
                     DeepSeek APP端疑似支持100万上下文窗口
                     <span class="tag">产品更新</span>
                 </h3>
                 <p class="news-description">
-                    有用户发现，在DeepSeek APP新开对话中直接询问模型上下文时，系统提示明确告知支持100万上下文窗口，知识库截止到2025年3月。作为对比，2025年10月询问时模型给出的答复是目前公开的DeepSeek版本不支持如此长的上下文。这一发现表明DeepSeek可能在APP端率先部署了长上下文支持功能，为用户处理长文档和复杂对话提供了更强大的能力。
+                    有用户在DeepSeek APP新开对话中直接询问模型上下文时，系统提示明确告知支持100万上下文窗口，知识库截止到2025年3月。作为对比，2025年10月询问时给出的答复是目前公开版本不支持如此长的上下文。这一发现表明DeepSeek可能在APP端率先部署了长上下文支持功能。
                 </p>
                 <div class="news-meta">
                     <span class="source">📰 Linux DO社区</span>
@@ -248,7 +284,7 @@
                     <span class="tag">政策法规</span>
                 </h3>
                 <p class="news-description">
-                    State of AI报道，中国国家网信办发布了关于模拟人类个性和情感参与的AI系统监管草案，这是全球首个针对此类AI的监管框架。该草案涵盖了情感伴侣AI、个性化角色扮演系统等应用领域，监管范围之广是西方国家尚未尝试的。这一举措反映了中国对AI系统社会影响的重视，特别是在情感依赖和心理健康方面可能带来的风险。
+                    State of AI报道，中国国家网信办发布了关于模拟人类个性和情感参与的AI系统监管草案，这是全球首个针对此类AI的监管框架。该草案涵盖了情感伴侣AI、个性化角色扮演系统等应用领域，监管范围之广是西方国家尚未尝试的。
                 </p>
                 <div class="news-meta">
                     <span class="source">📰 State of AI</span>
@@ -262,7 +298,7 @@
                     <span class="tag">国际关系</span>
                 </h3>
                 <p class="news-description">
-                    联合国新闻报道，在军事AI峰会上，约三分之一的国家同意采纳监管战争中使用AI技术的声明，但军事大国美国和中国拒绝参与。这一事件突显了全球AI军事化监管面临的重大挑战。尽管国际社会普遍认识到自主武器系统的风险，但主要军事强国在具体监管措施上仍存在分歧。
+                    联合国新闻报道，在军事AI峰会上，约三分之一的国家同意采纳监管战争中使用AI技术的声明，但军事大国美国和中国拒绝参与。这一事件突显了全球AI军事化监管面临的重大挑战。
                 </p>
                 <div class="news-meta">
                     <span class="source">📰 UN News / Reuters</span>
@@ -475,8 +511,11 @@
 
         <div class="footer">
             <p>📊 数据更新时间: 2026年2月12日 7:00 AM (Asia/Shanghai)</p>
-            <p>🔗 新闻来源: Tom's Guide, LLM Stats, TechCrunch, CNBC, ZDNET, State of AI, Lexology 等</p>
-            <p style="margin-top: 10px;">🤖 AI自动收集整理 | 去重处理：已去除2月11日重复报道的苹果Siri升级、iOS 26.4发布详情、Anthropic超级碗广告大战详细分析、Harvey法律AI估值110亿美元详情、Claude Opus 4.6登陆Amazon Bedrock详情、Claude近100%代码由AI生成详情、微软安全护栏绕过研究详情</p>
+            <p>🔗 新闻来源: Tom's Guide, LLM Stats, TechCrunch, CNBC, ZDNET, State of AI, Lexology, 36氪, 南华早报 等</p>
+            <p style="margin-top: 10px;">🤖 AI自动收集整理 | 本期新增：中文信源补充（36氪、南华早报）</p>
+            <p style="margin-top: 10px;">
+                🔗 <a href="https://news.ninjaer.top/ai-news-2026-02-12-cn.html">查看中文信源完整版</a>
+            </p>
         </div>
     </div>
 </body>
