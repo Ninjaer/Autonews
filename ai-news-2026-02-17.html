@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 新闻日报 - 2026年2月17日</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0d0d1a 100%);
+            min-height: 100vh; padding: 20px; color: #e0e0e0;
+        }
+        .container { max-width: 900px; margin: 0 auto; }
+        .header {
+            text-align: center; padding: 40px 20px; margin-bottom: 30px;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(123, 44, 191, 0.1));
+            border-radius: 20px; border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        .header h1 {
+            font-size: 2.5em; margin-bottom: 10px;
+            background: linear-gradient(135deg, #00d4ff, #7b2cbf);
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .header .date { font-size: 1.2em; color: #888; }
+        .header .stats { margin-top: 20px; display: flex; justify-content: center; gap: 30px; }
+        .stat {
+            background: rgba(0, 212, 255, 0.1); padding: 10px 20px;
+            border-radius: 10px; border: 1px solid rgba(0, 212, 255, 0.2);
+        }
+        .stat-num { font-size: 1.5em; font-weight: bold; color: #00d4ff; }
+        .stat-label { font-size: 0.9em; color: #888; }
+        .section { margin-bottom: 40px; }
+        .section-title {
+            font-size: 1.8em; margin-bottom: 20px; padding-bottom: 10px;
+            border-bottom: 2px solid rgba(0, 212, 255, 0.3);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .news-card {
+            background: rgba(255, 255, 255, 0.05); border-radius: 15px; padding: 25px;
+            margin-bottom: 20px; border: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer; transition: all 0.3s ease;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+            border-color: rgba(0, 212, 255, 0.4);
+        }
+        .news-title {
+            font-size: 1.3em; margin-bottom: 12px; color: #fff;
+            display: flex; align-items: flex-start; gap: 10px;
+        }
+        .news-title .tag {
+            background: linear-gradient(135deg, #7b2cbf, #00d4ff);
+            padding: 4px 12px; border-radius: 20px;
+            font-size: 0.75em; white-space: nowrap; flex-shrink: 0;
+        }
+        .news-description { color: #b0b0b0; font-size: 1em; line-height: 1.7; margin-bottom: 15px; }
+        .news-meta {
+            display: flex; justify-content: space-between; align-items: center;
+            font-size: 0.9em; color: #888; flex-wrap: wrap; gap: 10px;
+        }
+        .source { color: #00d4ff; font-weight: 500; }
+        .tier-1 { border-left: 4px solid #00d4ff; }
+        .tier-2 { border-left: 4px solid #7b2cbf; }
+        .tier-3 { border-left: 4px solid #ff6b6b; }
+        .footer { text-align: center; padding: 30px; color: #666; font-size: 0.9em; }
+        .footer a { color: #00d4ff; text-decoration: none; }
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(0, 212, 255, 0.1));
+            border: 1px solid rgba(255, 107, 107, 0.3);
+            border-radius: 15px; padding: 20px; margin-bottom: 20px;
+        }
+        .highlight-box h4 { color: #ff6b6b; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI 新闻日报</h1>
+            <p class="date">2026年2月17日 星期二</p>
+            <div class="stats">
+                <div class="stat"><div class="stat-num">16</div><div class="stat-label">条新闻</div></div>
+                <div class="stat"><div class="stat-num">6</div><div class="stat-label">个分类</div></div>
+                <div class="stat"><div class="stat-num">14</div><div class="stat-label">个信源</div></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🔥 今日焦点</h2>
+            
+            <div class="highlight-box">
+                <h4>⚠️ 重要声明</h4>
+                <p>本报告已做去重处理。与2月14-16日重复的主题（如Anthropic与五角大楼争议、GLM-5深度技术、Seedance 2.0、豆包2.0等）已大幅简化或省略。</p>
+            </div>
+            
+            <div class="news-card tier-1" onclick="window.open('https://www.cnbctv18.com/business/india-ai-impact-summit-2026-blackstone-leads-usd-1-billion-funding-round-in-ai-platform-neysa-ws-l-19850678.htm', '_blank')">
+                <h3 class="news-title">印度AI创企Neysa获黑石领投12亿美元融资 <span class="tag">重大融资</span></h3>
+                <p class="news-description">全球最大另类资产管理公司黑石集团领投印度AI加速云平台Neysa 12亿美元融资，这是印度AI领域最大规模融资之一。该笔融资包括6亿美元股权和6亿美元债务融资。Neysa计划在印度部署超过20000块GPU，支持企业、政府和公共服务的AI计算基础设施。消息发布恰逢2月16日开幕的印度AI影响峰会2026，这是全球南方国家首次举办此类国际AI盛会。</p>
+                <div class="news-meta">
+                    <span class="source">📰 CNBC TV18</span>
+                    <span>📅 2月16日</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-1" onclick="window.open('https://36kr.com/p/3683997437063044', '_blank')">
+                <h3 class="news-title">AI诸神混战在即，全行业都在等梁文锋 <span class="tag">行业观察</span></h3>
+                <p class="news-description">2026年2月中国AI竞争白热化，字节豆包2.0、阿里Qwen-Image 2.0、智谱GLM-5等密集发布，但DeepSeek保持异常沉默。据外媒报道，DeepSeek原计划2月中旬发布代号V4的新一代旗舰模型剑指Coding AI王座，但内部对发布时间保持沉默。2月11日DeepSeek悄悄将上下文窗口从128K token扩展至1M，外界猜测可能是V4 Preview。梁文锋能否再次带来「DeepSeek时刻」，成为行业焦点。</p>
+                <div class="news-meta">
+                    <span class="source">📰 36氪 / 投资界</span>
+                    <span>📅 2月16日</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-1" onclick="window.open('https://opentools.ai/news/openai-launches-gpt-53-codex-spark-lightning-fast-ai-model-for-real-time-coding', '_blank')">
+                <h3 class="news-title">OpenAI发布GPT-5.3-Codex-Spark：首款专注实时编码的AI模型 <span class="tag">产品发布</span></h3>
+                <p class="news-description">OpenAI于2月15日发布GPT-5.3-Codex-Spark，这是专为实时编码设计的轻量级模型，基于与Cerebras合作开发的超过100亿美元硬件基础设施。该模型已向ChatGPT Pro用户推出研究预览版，通过Codex工具、CLI和VS Code扩展提供。OpenAI同时宣布GPT-5.3-Codex参与递归自我改进，成为首个参与自身改进的广泛部署的AI模型。但该模型发布后即面临加州新AI安全法的审查，监管机构指控其可能存在高风险违规。</p>
+                <div class="news-meta">
+                    <span class="source">📰 OpenTools / IT Brief / Yahoo Finance</span>
+                    <span>📅 2月15-16日</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🔬 技术前沿</h2>
+            
+            <div class="news-card tier-1" onclick="window.open('https://36kr.com/p/3680086801936003', '_blank')">
+                <h3 class="news-title">MOSS核心创始人推FARS系统：AI将直播自主完成100篇科研论文 <span class="tag">科研突破</span></h3>
+                <p class="news-description">前复旦大学MOSS核心开发者孙天祥创办的Analemma公司推出FARS全自动科研系统，将于2月17日上午11点开始为期一个月的全网直播。该系统将从零开始自主完成科研全流程：调研文献、提出假设、设计实验、编写代码、分析数据、撰写论文，目标产出100篇研究论文。FARS调用Claude、GPT、Gemini等闭源模型API，由四个智能体模块（Ideation、Planning、Experiment、Writing）在共享文件系统中协作。这将是全球首次公开部署全自动科研系统。</p>
+                <div class="news-meta">
+                    <span class="source">📰 36氪 / 硅星人Pro</span>
+                    <span>📅 2月16日</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-2" onclick="window.open('https://www.alleywatch.com/2026/02/the-weekly-notable-startup-funding-report-2-16-26/', '_blank')">
+                <h3 class="news-title">OpenAI全面转向GPT-5.2：GPT-4o等多款旧模型正式退役 <span class="tag">产品更新</span></h3>
+                <p class="news-description">2月13日，OpenAI正式从ChatGPT中移除GPT-4o、GPT-4.1、GPT-4.1 mini和o4-mini等多款旧模型，全面转向GPT-5.2作为默认模型。OpenAI表示这一决策旨在为用户提供更强大的AI能力，同时简化产品线。GPT-5系列从2025年11月的GPT-5.1开始，已连续发布GPT-5.2（12月）和GPT-5.3-Codex（2月），迭代速度明显加快。</p>
+                <div class="news-meta">
+                    <span class="source">📰 MoneyControl / Explore AI Together</span>
+                    <span>📅 2月13-14日</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">💰 资本动态</h2>
+            
+            <div class="news-card tier-1" onclick="window.open('https://www.alleywatch.com/2026/02/the-weekly-notable-startup-funding-report-2-16-26/', '_blank')">
+                <h3 class="news-title">Anthropic完成300亿美元融资，累计融资达559亿美元 <span class="tag">超级融资</span></h3>
+                <p class="news-description">AI研究公司Anthropic本周完成300亿美元融资，使其累计融资总额达到559亿美元。投资者阵容豪华，包括Accel、Addition、Alpha Wave Global、Altimeter Capital、Bessemer Venture Partners、BlackRock、Blackstone、Coatue、Fidelity、Founders Fund、General Catalyst、Insight Partners、Lightspeed Venture Partners、Menlo Ventures、Microsoft、NVIDIA、Sequoia Capital、Temasek等顶级机构。本轮融资将支持Claude模型系列的持续开发和安全研究。</p>
+                <div class="news-meta">
+                    <span class="source">📰 AlleyWatch</span>
+                    <span>📅 2月16日</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-2" onclick="window.open('https://www.alleywatch.com/2026/02/the-weekly-notable-startup-funding-report-2-16-26/', '_blank')">
+                <h3 class="news-title">Apptronik获5.2亿美元融资：Google等投资人形机器人 <span class="tag">硬件突破</span></h3>
+                <p class="news-description">德州人形机器人公司Apptronik完成5.2亿美元融资，投资者包括Google、John Deere、Mercedes-Benz Group AG等。Apptronik致力于开发用于工业、商业和现实世界应用的人形机器人，累计融资已达9.6亿美元。随着AI大模型能力提升，具身智能成为行业新热点，机器人与AI的结合正在开辟全新赛道。</p>
+                <div class="news-meta">
+                    <span class="source">📰 AlleyWatch</span>
+                    <span>📅 2月16日</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-2" onclick="window.open('https://www.alleywatch.com/2026/02/the-weekly-notable-startup-funding-report-2-16-26/', '_blank')">
+                <h3 class="news-title">AI医疗公司Anterior融资4000万美元：自动化医保审批 <span class="tag">垂直应用</span></h3>
+                <p class="news-description">纽约AI医疗管理公司Anterior完成4000万美元融资，其AI平台可自动化医疗程序的事先授权和保险审批流程。公司由Abdel Mahmoud和Zahid Mahmood于2022年创立，累计融资达6320万美元，投资者包括FPV Ventures、Kinnevik、New Enterprise Associates和Sequoia Capital。随着美国医疗系统效率需求上升，AI在医疗保险领域的应用正在快速增长。</p>
+                <div class="news-meta">
+                    <span class="source">📰 AlleyWatch</span>
+                    <span>📅 2月16日</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-3" onclick="window.open('https://startupnews.fyi/2026/02/16/india-approves-1b-state-backed-venture/', '_blank')">
+                <h3 class="news-title">印度批准11亿美元国家支持风险投资基金 <span class="tag">政策动态</span></h3>
+                <作为印度AI影响峰会2026的一部分，印度政府批准了110亿美元的国家支持风险投资基金，旨在加强国内创业生态系统建设。该基金将重点支持AI、深度科技和绿色能源领域的早期创业公司。此举彰显了印度政府培育本土科技创新生态的决心，预计将吸引更多全球资本投资印度科技创业。</p>
+                <div class="news-meta">
+                    <span class="source">📰 StartupNews.fyi</span>
+                    <span>📅 2月16日</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🌏 全球AI动态</h2>
+            
+            <div class="news-card tier-2" onclick="window.open('https://techcrunch.com/2026/02/15/anthropic-and-the-pentagon-are-reportedly-arguing-over-claude-usage/', '_blank')">
+                <h3 class="news-title">Anthropic与五角大楼对峙：Claude军事用途争议持续发酵 <span class="tag">政策争议</span></h3>
+                <p class="news-description">据Axios报道，五角大楼正向AI公司施压，要求允许美国军方将AI技术用于「所有合法目的」。OpenAI、Google和xAI已表现出灵活性，但Anthropic拒绝妥协。五角大楼威胁终止与Anthropic价值2亿美元的合同。此前有报道称Claude被用于美国军方捕获委内瑞拉前总统马杜罗的行动。Anthropic回应称专注于自主武器和大规模国内监控的硬性限制问题。</p>
+                <div class="news-meta">
+                    <span class="source">📰 TechCrunch / Axios</span>
+                    <span>📅 2月15日</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-3" onclick="window.open('https://finance.yahoo.com/news/openais-gpt-5-3-codex-123124816.html', '_blank')">
+                <h3 class="news-title">OpenAI GPT-5.3-Codex面临加州AI安全法审查 <span class="tag">监管动态</span></h3>
+                <p class="news-description">加州AI安全监管机构指控OpenAI在发布GPT-5.3-Codex时可能违反了该州新通过的AI安全法。该监管机构声称该模型可能存在高风险违规行为，OpenAI可能面临巨额罚款。这标志着针对前沿AI模型的监管进入执行阶段，AI公司发布新模型时将面临更严格的合规要求。</p>
+                <div class="news-meta">
+                    <span class="source">📰 Yahoo Finance</span>
+                    <span>📅 2月16日</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">📊 行业观察</h2>
+            
+            <div class="news-card tier-2" onclick="window.open('https://windowsnews.ai/article/ai-2026-capital-cycle-can-microsoft-tech-giants-deliver-returns-on-massive-capex.401326', '_blank')">
+                <h3 class="news-title">2026年AI资本周期：微软等科技巨头能否实现大规模资本支出回报？ <span class="tag">投资分析</span></h3>
+                <p class="news-description">随着AI领域投资持续升温，投资者开始关注大型科技公司的资本支出回报问题。到2026年，评估AI投资的关键指标将包括投资资本回报率（ROIC）等。微软、Meta、Google等公司在AI基础设施上的投入已达数千亿美元，市场正在等待这些投资转化为实际收益。分析师认为，AI应用层面的突破将是决定投资回报的关键。</p>
+                <div class="news-meta">
+                    <span class="source">📰 Windows News</span>
+                    <span>📅 2月15日</span>
+                </div>
+            </div>
+
+            <div class="news-card tier-3" onclick="window.open('https://www.oneindia.com/india/india-ai-summit-2026-from-funding-to-pitching-what-investors-really-want-kalaari-s-jayraj-bharat-7999799.html', '_blank')">
+                <h3 class="news-title">印度AI峰会2026：投资人解读AI创业公司成功要素 <span class="tag">创业指南</h3>
+                <p class="news-description">印度AI影响峰会2026于2月16日在新德里开幕，这是全球南方国家首次举办此类国际AI盛会。Kalaari Capital合伙人Jayraj Bharat Patel在峰会上分享了投资人评估AI创业公司的标准，包括技术创新、产品市场契合度、团队能力和商业模式等。他认为AI创业公司需要展示清晰的差异化价值，才能在竞争激烈的市场中获得融资。</p>
+                <div class="news-meta">
+                    <span class="source">📰 OneIndia</span>
+                    <span>📅 2月16日</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📊 数据更新时间: 2026年2月17日 7:00 AM (北京时间)</p>
+            <p>🔗 新闻来源: 36氪, CNBC TV18, TechCrunch, Yahoo Finance, AlleyWatch, OpenTools, IT Brief, OneIndia, Windows News, StartupNews.fyi, 硅星人Pro, 投资界</p>
+            <p style="margin-top:10px;">🤖 AI自动收集整理 | 本报告已做去重处理</p>
+            <p style="margin-top:5px;color:#666;">⚠️ 说明：与2月14-16日重复的主题已大幅简化。详情请参阅前两天报告。</p>
+            <p style="margin-top:5px;color:#666;">💡 今日重点：印度Neysa融资12亿美元、梁文锋与DeepSeek悬念、GPT-5.3-Codex发布与监管、FARS科研直播系统</p>
+        </div>
+    </div>
+</body>
+</html>
